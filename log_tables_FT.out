@@ -1,0 +1,1719 @@
+
+
+ <p><b>English samples</b></p>
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="11" halign="left">generated_wav</th>
+    </tr>
+    <tr>
+      <th>Speaker Name</th>
+      <th>en_whisper_female</th>
+      <th>en_female</th>
+      <th>en_robo_coqui</th>
+      <th>fr_male1</th>
+      <th>pt_male1</th>
+      <th>ar_male</th>
+      <th>zh_male</th>
+      <th>fr_male2</th>
+      <th>fr_male3</th>
+      <th>pt_female</th>
+      <th>pt_male2</th>
+    </tr>
+    <tr>
+      <th>Model Name</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Speaker Reference</th>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/en_whisper_voice_00000015.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/en_miley_00000044_00000056.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/en_robo_coqui_000254180_000259700.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/fr_yan_lecun_00000080.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/pt_lula_00000118.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/ar_george_00000000.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/zh_jack_ma_00000000.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/fr_Jean_11_00000000.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/fr_julian_00000010.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/pt_dilma_00000003.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/pt_bolsonaro_00000172.wav"></audio></td>
+    </tr>
+    <tr>
+      <th>XTTS Zero-shot</th>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/en_whisper_voice_00000015.wav/en_whisper_voice_00000015.wav_en_1135.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/en_miley_00000044_00000056.wav/en_miley_00000044_00000056.wav_en_591.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/en_robo_coqui_000254180_000259700.wav/en_robo_coqui_000254180_000259700.wav_en_1023.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/fr_yan_lecun_00000080.wav/fr_yan_lecun_00000080.wav_en_2415.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/pt_lula_00000118.wav/pt_lula_00000118.wav_en_3151.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/ar_george_00000000.wav/ar_george_00000000.wav_en_127.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/zh_jack_ma_00000000.wav/zh_jack_ma_00000000.wav_en_3775.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/fr_Jean_11_00000000.wav/fr_Jean_11_00000000.wav_en_1535.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/fr_julian_00000010.wav/fr_julian_00000010.wav_en_1887.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/pt_dilma_00000003.wav/pt_dilma_00000003.wav_en_2927.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/pt_bolsonaro_00000172.wav/pt_bolsonaro_00000172.wav_en_2495.wav"></audio></td>
+    </tr>
+    <tr>
+      <th>XTTS Fine-tuning</th>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/en_whisper_voice_00000015.wav/en_whisper_voice_00000015.wav_en_1135.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/en_miley_00000044_00000056.wav/en_miley_00000044_00000056.wav_en_591.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/en_robo_coqui_000254180_000259700.wav/en_robo_coqui_000254180_000259700.wav_en_1023.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/fr_yan_lecun_00000080.wav/fr_yan_lecun_00000080.wav_en_2415.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/pt_lula_00000118.wav/pt_lula_00000118.wav_en_3151.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/ar_george_00000000.wav/ar_george_00000000.wav_en_127.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/zh_jack_ma_00000000.wav/zh_jack_ma_00000000.wav_en_3775.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/fr_Jean_11_00000000.wav/fr_Jean_11_00000000.wav_en_1535.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/fr_julian_00000010.wav/fr_julian_00000010.wav_en_1887.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/pt_dilma_00000003.wav/pt_dilma_00000003.wav_en_2927.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/pt_bolsonaro_00000172.wav/pt_bolsonaro_00000172.wav_en_2495.wav"></audio></td>
+    </tr>
+  </tbody>
+</table>
+
+
+ <p><b>Chinese samples</b></p>
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="11" halign="left">generated_wav</th>
+    </tr>
+    <tr>
+      <th>Speaker Name</th>
+      <th>en_whisper_female</th>
+      <th>en_female</th>
+      <th>en_robo_coqui</th>
+      <th>fr_male1</th>
+      <th>pt_male1</th>
+      <th>ar_male</th>
+      <th>zh_male</th>
+      <th>fr_male2</th>
+      <th>fr_male3</th>
+      <th>pt_female</th>
+      <th>pt_male2</th>
+    </tr>
+    <tr>
+      <th>Model Name</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Speaker Reference</th>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/en_whisper_voice_00000015.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/en_miley_00000044_00000056.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/en_robo_coqui_000254180_000259700.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/fr_yan_lecun_00000080.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/pt_lula_00000118.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/ar_george_00000000.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/zh_jack_ma_00000000.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/fr_Jean_11_00000000.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/fr_julian_00000010.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/pt_dilma_00000003.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/pt_bolsonaro_00000172.wav"></audio></td>
+    </tr>
+    <tr>
+      <th>XTTS Zero-shot</th>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/en_whisper_voice_00000015.wav/en_whisper_voice_00000015.wav_zh-cn_1252.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/en_miley_00000044_00000056.wav/en_miley_00000044_00000056.wav_zh-cn_404.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/en_robo_coqui_000254180_000259700.wav/en_robo_coqui_000254180_000259700.wav_zh-cn_964.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/fr_yan_lecun_00000080.wav/fr_yan_lecun_00000080.wav_zh-cn_2292.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/pt_lula_00000118.wav/pt_lula_00000118.wav_zh-cn_3348.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/ar_george_00000000.wav/ar_george_00000000.wav_zh-cn_164.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/zh_jack_ma_00000000.wav/zh_jack_ma_00000000.wav_zh-cn_3780.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/fr_Jean_11_00000000.wav/fr_Jean_11_00000000.wav_zh-cn_1492.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/fr_julian_00000010.wav/fr_julian_00000010.wav_zh-cn_1764.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/pt_dilma_00000003.wav/pt_dilma_00000003.wav_zh-cn_2868.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/pt_bolsonaro_00000172.wav/pt_bolsonaro_00000172.wav_zh-cn_2708.wav"></audio></td>
+    </tr>
+    <tr>
+      <th>XTTS Fine-tuning</th>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/en_whisper_voice_00000015.wav/en_whisper_voice_00000015.wav_zh-cn_1252.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/en_miley_00000044_00000056.wav/en_miley_00000044_00000056.wav_zh-cn_404.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/en_robo_coqui_000254180_000259700.wav/en_robo_coqui_000254180_000259700.wav_zh-cn_964.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/fr_yan_lecun_00000080.wav/fr_yan_lecun_00000080.wav_zh-cn_2292.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/pt_lula_00000118.wav/pt_lula_00000118.wav_zh-cn_3348.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/ar_george_00000000.wav/ar_george_00000000.wav_zh-cn_164.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/zh_jack_ma_00000000.wav/zh_jack_ma_00000000.wav_zh-cn_3780.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/fr_Jean_11_00000000.wav/fr_Jean_11_00000000.wav_zh-cn_1492.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/fr_julian_00000010.wav/fr_julian_00000010.wav_zh-cn_1764.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/pt_dilma_00000003.wav/pt_dilma_00000003.wav_zh-cn_2868.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/pt_bolsonaro_00000172.wav/pt_bolsonaro_00000172.wav_zh-cn_2708.wav"></audio></td>
+    </tr>
+  </tbody>
+</table>
+
+
+ <p><b>Portuguese samples</b></p>
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="11" halign="left">generated_wav</th>
+    </tr>
+    <tr>
+      <th>Speaker Name</th>
+      <th>en_whisper_female</th>
+      <th>en_female</th>
+      <th>en_robo_coqui</th>
+      <th>fr_male1</th>
+      <th>pt_male1</th>
+      <th>ar_male</th>
+      <th>zh_male</th>
+      <th>fr_male2</th>
+      <th>fr_male3</th>
+      <th>pt_female</th>
+      <th>pt_male2</th>
+    </tr>
+    <tr>
+      <th>Model Name</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Speaker Reference</th>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/en_whisper_voice_00000015.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/en_miley_00000044_00000056.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/en_robo_coqui_000254180_000259700.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/fr_yan_lecun_00000080.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/pt_lula_00000118.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/ar_george_00000000.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/zh_jack_ma_00000000.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/fr_Jean_11_00000000.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/fr_julian_00000010.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/pt_dilma_00000003.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/pt_bolsonaro_00000172.wav"></audio></td>
+    </tr>
+    <tr>
+      <th>XTTS Zero-shot</th>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/en_whisper_voice_00000015.wav/en_whisper_voice_00000015.wav_pt_1178.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/en_miley_00000044_00000056.wav/en_miley_00000044_00000056.wav_pt_634.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/en_robo_coqui_000254180_000259700.wav/en_robo_coqui_000254180_000259700.wav_pt_698.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/fr_yan_lecun_00000080.wav/fr_yan_lecun_00000080.wav_pt_2250.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/pt_lula_00000118.wav/pt_lula_00000118.wav_pt_3354.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/ar_george_00000000.wav/ar_george_00000000.wav_pt_186.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/zh_jack_ma_00000000.wav/zh_jack_ma_00000000.wav_pt_3818.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/fr_Jean_11_00000000.wav/fr_Jean_11_00000000.wav_pt_1610.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/fr_julian_00000010.wav/fr_julian_00000010.wav_pt_2026.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/pt_dilma_00000003.wav/pt_dilma_00000003.wav_pt_3082.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/pt_bolsonaro_00000172.wav/pt_bolsonaro_00000172.wav_pt_2570.wav"></audio></td>
+    </tr>
+    <tr>
+      <th>XTTS Fine-tuning</th>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/en_whisper_voice_00000015.wav/en_whisper_voice_00000015.wav_pt_1178.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/en_miley_00000044_00000056.wav/en_miley_00000044_00000056.wav_pt_634.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/en_robo_coqui_000254180_000259700.wav/en_robo_coqui_000254180_000259700.wav_pt_698.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/fr_yan_lecun_00000080.wav/fr_yan_lecun_00000080.wav_pt_2250.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/pt_lula_00000118.wav/pt_lula_00000118.wav_pt_3354.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/ar_george_00000000.wav/ar_george_00000000.wav_pt_186.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/zh_jack_ma_00000000.wav/zh_jack_ma_00000000.wav_pt_3818.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/fr_Jean_11_00000000.wav/fr_Jean_11_00000000.wav_pt_1610.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/fr_julian_00000010.wav/fr_julian_00000010.wav_pt_2026.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/pt_dilma_00000003.wav/pt_dilma_00000003.wav_pt_3082.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/pt_bolsonaro_00000172.wav/pt_bolsonaro_00000172.wav_pt_2570.wav"></audio></td>
+    </tr>
+  </tbody>
+</table>
+
+
+ <p><b>Spanish samples</b></p>
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="11" halign="left">generated_wav</th>
+    </tr>
+    <tr>
+      <th>Speaker Name</th>
+      <th>en_whisper_female</th>
+      <th>en_female</th>
+      <th>en_robo_coqui</th>
+      <th>fr_male1</th>
+      <th>pt_male1</th>
+      <th>ar_male</th>
+      <th>zh_male</th>
+      <th>fr_male2</th>
+      <th>fr_male3</th>
+      <th>pt_female</th>
+      <th>pt_male2</th>
+    </tr>
+    <tr>
+      <th>Model Name</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Speaker Reference</th>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/en_whisper_voice_00000015.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/en_miley_00000044_00000056.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/en_robo_coqui_000254180_000259700.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/fr_yan_lecun_00000080.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/pt_lula_00000118.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/ar_george_00000000.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/zh_jack_ma_00000000.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/fr_Jean_11_00000000.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/fr_julian_00000010.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/pt_dilma_00000003.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/pt_bolsonaro_00000172.wav"></audio></td>
+    </tr>
+    <tr>
+      <th>XTTS Zero-shot</th>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/en_whisper_voice_00000015.wav/en_whisper_voice_00000015.wav_es_1212.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/en_miley_00000044_00000056.wav/en_miley_00000044_00000056.wav_es_620.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/en_robo_coqui_000254180_000259700.wav/en_robo_coqui_000254180_000259700.wav_es_764.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/fr_yan_lecun_00000080.wav/fr_yan_lecun_00000080.wav_es_2428.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/pt_lula_00000118.wav/pt_lula_00000118.wav_es_3356.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/ar_george_00000000.wav/ar_george_00000000.wav_es_236.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/zh_jack_ma_00000000.wav/zh_jack_ma_00000000.wav_es_3532.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/fr_Jean_11_00000000.wav/fr_Jean_11_00000000.wav_es_1644.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/fr_julian_00000010.wav/fr_julian_00000010.wav_es_2092.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/pt_dilma_00000003.wav/pt_dilma_00000003.wav_es_2988.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/pt_bolsonaro_00000172.wav/pt_bolsonaro_00000172.wav_es_2556.wav"></audio></td>
+    </tr>
+    <tr>
+      <th>XTTS Fine-tuning</th>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/en_whisper_voice_00000015.wav/en_whisper_voice_00000015.wav_es_1212.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/en_miley_00000044_00000056.wav/en_miley_00000044_00000056.wav_es_620.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/en_robo_coqui_000254180_000259700.wav/en_robo_coqui_000254180_000259700.wav_es_764.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/fr_yan_lecun_00000080.wav/fr_yan_lecun_00000080.wav_es_2428.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/pt_lula_00000118.wav/pt_lula_00000118.wav_es_3356.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/ar_george_00000000.wav/ar_george_00000000.wav_es_236.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/zh_jack_ma_00000000.wav/zh_jack_ma_00000000.wav_es_3532.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/fr_Jean_11_00000000.wav/fr_Jean_11_00000000.wav_es_1644.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/fr_julian_00000010.wav/fr_julian_00000010.wav_es_2092.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/pt_dilma_00000003.wav/pt_dilma_00000003.wav_es_2988.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/pt_bolsonaro_00000172.wav/pt_bolsonaro_00000172.wav_es_2556.wav"></audio></td>
+    </tr>
+  </tbody>
+</table>
+
+
+ <p><b>French samples</b></p>
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="11" halign="left">generated_wav</th>
+    </tr>
+    <tr>
+      <th>Speaker Name</th>
+      <th>en_whisper_female</th>
+      <th>en_female</th>
+      <th>en_robo_coqui</th>
+      <th>fr_male1</th>
+      <th>pt_male1</th>
+      <th>ar_male</th>
+      <th>zh_male</th>
+      <th>fr_male2</th>
+      <th>fr_male3</th>
+      <th>pt_female</th>
+      <th>pt_male2</th>
+    </tr>
+    <tr>
+      <th>Model Name</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Speaker Reference</th>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/en_whisper_voice_00000015.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/en_miley_00000044_00000056.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/en_robo_coqui_000254180_000259700.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/fr_yan_lecun_00000080.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/pt_lula_00000118.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/ar_george_00000000.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/zh_jack_ma_00000000.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/fr_Jean_11_00000000.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/fr_julian_00000010.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/pt_dilma_00000003.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/pt_bolsonaro_00000172.wav"></audio></td>
+    </tr>
+    <tr>
+      <th>XTTS Zero-shot</th>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/en_whisper_voice_00000015.wav/en_whisper_voice_00000015.wav_fr_1117.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/en_miley_00000044_00000056.wav/en_miley_00000044_00000056.wav_fr_637.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/en_robo_coqui_000254180_000259700.wav/en_robo_coqui_000254180_000259700.wav_fr_1037.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/fr_yan_lecun_00000080.wav/fr_yan_lecun_00000080.wav_fr_2109.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/pt_lula_00000118.wav/pt_lula_00000118.wav_fr_3437.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/ar_george_00000000.wav/ar_george_00000000.wav_fr_205.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/zh_jack_ma_00000000.wav/zh_jack_ma_00000000.wav_fr_3789.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/fr_Jean_11_00000000.wav/fr_Jean_11_00000000.wav_fr_1725.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/fr_julian_00000010.wav/fr_julian_00000010.wav_fr_1997.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/pt_dilma_00000003.wav/pt_dilma_00000003.wav_fr_2813.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/pt_bolsonaro_00000172.wav/pt_bolsonaro_00000172.wav_fr_2605.wav"></audio></td>
+    </tr>
+    <tr>
+      <th>XTTS Fine-tuning</th>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/en_whisper_voice_00000015.wav/en_whisper_voice_00000015.wav_fr_1117.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/en_miley_00000044_00000056.wav/en_miley_00000044_00000056.wav_fr_637.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/en_robo_coqui_000254180_000259700.wav/en_robo_coqui_000254180_000259700.wav_fr_1037.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/fr_yan_lecun_00000080.wav/fr_yan_lecun_00000080.wav_fr_2109.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/pt_lula_00000118.wav/pt_lula_00000118.wav_fr_3437.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/ar_george_00000000.wav/ar_george_00000000.wav_fr_205.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/zh_jack_ma_00000000.wav/zh_jack_ma_00000000.wav_fr_3789.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/fr_Jean_11_00000000.wav/fr_Jean_11_00000000.wav_fr_1725.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/fr_julian_00000010.wav/fr_julian_00000010.wav_fr_1997.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/pt_dilma_00000003.wav/pt_dilma_00000003.wav_fr_2813.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/pt_bolsonaro_00000172.wav/pt_bolsonaro_00000172.wav_fr_2605.wav"></audio></td>
+    </tr>
+  </tbody>
+</table>
+
+
+ <p><b>German samples</b></p>
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="11" halign="left">generated_wav</th>
+    </tr>
+    <tr>
+      <th>Speaker Name</th>
+      <th>en_whisper_female</th>
+      <th>en_female</th>
+      <th>en_robo_coqui</th>
+      <th>fr_male1</th>
+      <th>pt_male1</th>
+      <th>ar_male</th>
+      <th>zh_male</th>
+      <th>fr_male2</th>
+      <th>fr_male3</th>
+      <th>pt_female</th>
+      <th>pt_male2</th>
+    </tr>
+    <tr>
+      <th>Model Name</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Speaker Reference</th>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/en_whisper_voice_00000015.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/en_miley_00000044_00000056.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/en_robo_coqui_000254180_000259700.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/fr_yan_lecun_00000080.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/pt_lula_00000118.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/ar_george_00000000.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/zh_jack_ma_00000000.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/fr_Jean_11_00000000.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/fr_julian_00000010.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/pt_dilma_00000003.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/pt_bolsonaro_00000172.wav"></audio></td>
+    </tr>
+    <tr>
+      <th>XTTS Zero-shot</th>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/en_whisper_voice_00000015.wav/en_whisper_voice_00000015.wav_de_1070.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/en_miley_00000044_00000056.wav/en_miley_00000044_00000056.wav_de_494.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/en_robo_coqui_000254180_000259700.wav/en_robo_coqui_000254180_000259700.wav_de_910.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/fr_yan_lecun_00000080.wav/fr_yan_lecun_00000080.wav_de_2334.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/pt_lula_00000118.wav/pt_lula_00000118.wav_de_3406.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/ar_george_00000000.wav/ar_george_00000000.wav_de_158.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/zh_jack_ma_00000000.wav/zh_jack_ma_00000000.wav_de_3710.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/fr_Jean_11_00000000.wav/fr_Jean_11_00000000.wav_de_1598.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/fr_julian_00000010.wav/fr_julian_00000010.wav_de_1790.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/pt_dilma_00000003.wav/pt_dilma_00000003.wav_de_3038.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/pt_bolsonaro_00000172.wav/pt_bolsonaro_00000172.wav_de_2638.wav"></audio></td>
+    </tr>
+    <tr>
+      <th>XTTS Fine-tuning</th>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/en_whisper_voice_00000015.wav/en_whisper_voice_00000015.wav_de_1070.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/en_miley_00000044_00000056.wav/en_miley_00000044_00000056.wav_de_494.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/en_robo_coqui_000254180_000259700.wav/en_robo_coqui_000254180_000259700.wav_de_910.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/fr_yan_lecun_00000080.wav/fr_yan_lecun_00000080.wav_de_2334.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/pt_lula_00000118.wav/pt_lula_00000118.wav_de_3406.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/ar_george_00000000.wav/ar_george_00000000.wav_de_158.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/zh_jack_ma_00000000.wav/zh_jack_ma_00000000.wav_de_3710.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/fr_Jean_11_00000000.wav/fr_Jean_11_00000000.wav_de_1598.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/fr_julian_00000010.wav/fr_julian_00000010.wav_de_1790.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/pt_dilma_00000003.wav/pt_dilma_00000003.wav_de_3038.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/pt_bolsonaro_00000172.wav/pt_bolsonaro_00000172.wav_de_2638.wav"></audio></td>
+    </tr>
+  </tbody>
+</table>
+
+
+ <p><b>Italian samples</b></p>
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="11" halign="left">generated_wav</th>
+    </tr>
+    <tr>
+      <th>Speaker Name</th>
+      <th>en_whisper_female</th>
+      <th>en_female</th>
+      <th>en_robo_coqui</th>
+      <th>fr_male1</th>
+      <th>pt_male1</th>
+      <th>ar_male</th>
+      <th>zh_male</th>
+      <th>fr_male2</th>
+      <th>fr_male3</th>
+      <th>pt_female</th>
+      <th>pt_male2</th>
+    </tr>
+    <tr>
+      <th>Model Name</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Speaker Reference</th>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/en_whisper_voice_00000015.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/en_miley_00000044_00000056.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/en_robo_coqui_000254180_000259700.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/fr_yan_lecun_00000080.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/pt_lula_00000118.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/ar_george_00000000.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/zh_jack_ma_00000000.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/fr_Jean_11_00000000.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/fr_julian_00000010.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/pt_dilma_00000003.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/pt_bolsonaro_00000172.wav"></audio></td>
+    </tr>
+    <tr>
+      <th>XTTS Zero-shot</th>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/en_whisper_voice_00000015.wav/en_whisper_voice_00000015.wav_it_1291.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/en_miley_00000044_00000056.wav/en_miley_00000044_00000056.wav_it_475.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/en_robo_coqui_000254180_000259700.wav/en_robo_coqui_000254180_000259700.wav_it_859.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/fr_yan_lecun_00000080.wav/fr_yan_lecun_00000080.wav_it_2347.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/pt_lula_00000118.wav/pt_lula_00000118.wav_it_3227.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/ar_george_00000000.wav/ar_george_00000000.wav_it_203.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/zh_jack_ma_00000000.wav/zh_jack_ma_00000000.wav_it_3627.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/fr_Jean_11_00000000.wav/fr_Jean_11_00000000.wav_it_1691.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/fr_julian_00000010.wav/fr_julian_00000010.wav_it_2059.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/pt_dilma_00000003.wav/pt_dilma_00000003.wav_it_2859.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/pt_bolsonaro_00000172.wav/pt_bolsonaro_00000172.wav_it_2779.wav"></audio></td>
+    </tr>
+    <tr>
+      <th>XTTS Fine-tuning</th>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/en_whisper_voice_00000015.wav/en_whisper_voice_00000015.wav_it_1291.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/en_miley_00000044_00000056.wav/en_miley_00000044_00000056.wav_it_475.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/en_robo_coqui_000254180_000259700.wav/en_robo_coqui_000254180_000259700.wav_it_859.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/fr_yan_lecun_00000080.wav/fr_yan_lecun_00000080.wav_it_2347.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/pt_lula_00000118.wav/pt_lula_00000118.wav_it_3227.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/ar_george_00000000.wav/ar_george_00000000.wav_it_203.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/zh_jack_ma_00000000.wav/zh_jack_ma_00000000.wav_it_3627.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/fr_Jean_11_00000000.wav/fr_Jean_11_00000000.wav_it_1691.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/fr_julian_00000010.wav/fr_julian_00000010.wav_it_2059.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/pt_dilma_00000003.wav/pt_dilma_00000003.wav_it_2859.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/pt_bolsonaro_00000172.wav/pt_bolsonaro_00000172.wav_it_2779.wav"></audio></td>
+    </tr>
+  </tbody>
+</table>
+
+
+ <p><b>Polish samples</b></p>
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="11" halign="left">generated_wav</th>
+    </tr>
+    <tr>
+      <th>Speaker Name</th>
+      <th>en_whisper_female</th>
+      <th>en_female</th>
+      <th>en_robo_coqui</th>
+      <th>fr_male1</th>
+      <th>pt_male1</th>
+      <th>ar_male</th>
+      <th>zh_male</th>
+      <th>fr_male2</th>
+      <th>fr_male3</th>
+      <th>pt_female</th>
+      <th>pt_male2</th>
+    </tr>
+    <tr>
+      <th>Model Name</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Speaker Reference</th>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/en_whisper_voice_00000015.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/en_miley_00000044_00000056.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/en_robo_coqui_000254180_000259700.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/fr_yan_lecun_00000080.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/pt_lula_00000118.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/ar_george_00000000.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/zh_jack_ma_00000000.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/fr_Jean_11_00000000.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/fr_julian_00000010.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/pt_dilma_00000003.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/pt_bolsonaro_00000172.wav"></audio></td>
+    </tr>
+    <tr>
+      <th>XTTS Zero-shot</th>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/en_whisper_voice_00000015.wav/en_whisper_voice_00000015.wav_pl_1257.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/en_miley_00000044_00000056.wav/en_miley_00000044_00000056.wav_pl_393.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/en_robo_coqui_000254180_000259700.wav/en_robo_coqui_000254180_000259700.wav_pl_937.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/fr_yan_lecun_00000080.wav/fr_yan_lecun_00000080.wav_pl_2425.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/pt_lula_00000118.wav/pt_lula_00000118.wav_pl_3257.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/ar_george_00000000.wav/ar_george_00000000.wav_pl_217.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/zh_jack_ma_00000000.wav/zh_jack_ma_00000000.wav_pl_3673.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/fr_Jean_11_00000000.wav/fr_Jean_11_00000000.wav_pl_1657.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/fr_julian_00000010.wav/fr_julian_00000010.wav_pl_1881.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/pt_dilma_00000003.wav/pt_dilma_00000003.wav_pl_3033.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/pt_bolsonaro_00000172.wav/pt_bolsonaro_00000172.wav_pl_2585.wav"></audio></td>
+    </tr>
+    <tr>
+      <th>XTTS Fine-tuning</th>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/en_whisper_voice_00000015.wav/en_whisper_voice_00000015.wav_pl_1257.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/en_miley_00000044_00000056.wav/en_miley_00000044_00000056.wav_pl_393.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/en_robo_coqui_000254180_000259700.wav/en_robo_coqui_000254180_000259700.wav_pl_937.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/fr_yan_lecun_00000080.wav/fr_yan_lecun_00000080.wav_pl_2425.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/pt_lula_00000118.wav/pt_lula_00000118.wav_pl_3257.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/ar_george_00000000.wav/ar_george_00000000.wav_pl_217.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/zh_jack_ma_00000000.wav/zh_jack_ma_00000000.wav_pl_3673.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/fr_Jean_11_00000000.wav/fr_Jean_11_00000000.wav_pl_1657.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/fr_julian_00000010.wav/fr_julian_00000010.wav_pl_1881.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/pt_dilma_00000003.wav/pt_dilma_00000003.wav_pl_3033.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/pt_bolsonaro_00000172.wav/pt_bolsonaro_00000172.wav_pl_2585.wav"></audio></td>
+    </tr>
+  </tbody>
+</table>
+
+
+ <p><b>Turkish samples</b></p>
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="11" halign="left">generated_wav</th>
+    </tr>
+    <tr>
+      <th>Speaker Name</th>
+      <th>en_whisper_female</th>
+      <th>en_female</th>
+      <th>en_robo_coqui</th>
+      <th>fr_male1</th>
+      <th>pt_male1</th>
+      <th>ar_male</th>
+      <th>zh_male</th>
+      <th>fr_male2</th>
+      <th>fr_male3</th>
+      <th>pt_female</th>
+      <th>pt_male2</th>
+    </tr>
+    <tr>
+      <th>Model Name</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Speaker Reference</th>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/en_whisper_voice_00000015.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/en_miley_00000044_00000056.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/en_robo_coqui_000254180_000259700.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/fr_yan_lecun_00000080.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/pt_lula_00000118.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/ar_george_00000000.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/zh_jack_ma_00000000.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/fr_Jean_11_00000000.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/fr_julian_00000010.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/pt_dilma_00000003.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/pt_bolsonaro_00000172.wav"></audio></td>
+    </tr>
+    <tr>
+      <th>XTTS Zero-shot</th>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/en_whisper_voice_00000015.wav/en_whisper_voice_00000015.wav_tr_1240.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/en_miley_00000044_00000056.wav/en_miley_00000044_00000056.wav_tr_696.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/en_robo_coqui_000254180_000259700.wav/en_robo_coqui_000254180_000259700.wav_tr_1016.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/fr_yan_lecun_00000080.wav/fr_yan_lecun_00000080.wav_tr_2392.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/pt_lula_00000118.wav/pt_lula_00000118.wav_tr_3448.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/ar_george_00000000.wav/ar_george_00000000.wav_tr_24.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/zh_jack_ma_00000000.wav/zh_jack_ma_00000000.wav_tr_3768.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/fr_Jean_11_00000000.wav/fr_Jean_11_00000000.wav_tr_1720.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/fr_julian_00000010.wav/fr_julian_00000010.wav_tr_1848.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/pt_dilma_00000003.wav/pt_dilma_00000003.wav_tr_3096.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/pt_bolsonaro_00000172.wav/pt_bolsonaro_00000172.wav_tr_2520.wav"></audio></td>
+    </tr>
+    <tr>
+      <th>XTTS Fine-tuning</th>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/en_whisper_voice_00000015.wav/en_whisper_voice_00000015.wav_tr_1240.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/en_miley_00000044_00000056.wav/en_miley_00000044_00000056.wav_tr_696.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/en_robo_coqui_000254180_000259700.wav/en_robo_coqui_000254180_000259700.wav_tr_1016.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/fr_yan_lecun_00000080.wav/fr_yan_lecun_00000080.wav_tr_2392.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/pt_lula_00000118.wav/pt_lula_00000118.wav_tr_3448.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/ar_george_00000000.wav/ar_george_00000000.wav_tr_24.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/zh_jack_ma_00000000.wav/zh_jack_ma_00000000.wav_tr_3768.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/fr_Jean_11_00000000.wav/fr_Jean_11_00000000.wav_tr_1720.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/fr_julian_00000010.wav/fr_julian_00000010.wav_tr_1848.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/pt_dilma_00000003.wav/pt_dilma_00000003.wav_tr_3096.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/pt_bolsonaro_00000172.wav/pt_bolsonaro_00000172.wav_tr_2520.wav"></audio></td>
+    </tr>
+  </tbody>
+</table>
+
+
+ <p><b>Russian samples</b></p>
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="11" halign="left">generated_wav</th>
+    </tr>
+    <tr>
+      <th>Speaker Name</th>
+      <th>en_whisper_female</th>
+      <th>en_female</th>
+      <th>en_robo_coqui</th>
+      <th>fr_male1</th>
+      <th>pt_male1</th>
+      <th>ar_male</th>
+      <th>zh_male</th>
+      <th>fr_male2</th>
+      <th>fr_male3</th>
+      <th>pt_female</th>
+      <th>pt_male2</th>
+    </tr>
+    <tr>
+      <th>Model Name</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Speaker Reference</th>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/en_whisper_voice_00000015.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/en_miley_00000044_00000056.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/en_robo_coqui_000254180_000259700.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/fr_yan_lecun_00000080.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/pt_lula_00000118.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/ar_george_00000000.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/zh_jack_ma_00000000.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/fr_Jean_11_00000000.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/fr_julian_00000010.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/pt_dilma_00000003.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/pt_bolsonaro_00000172.wav"></audio></td>
+    </tr>
+    <tr>
+      <th>XTTS Zero-shot</th>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/en_whisper_voice_00000015.wav/en_whisper_voice_00000015.wav_ru_1235.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/en_miley_00000044_00000056.wav/en_miley_00000044_00000056.wav_ru_451.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/en_robo_coqui_000254180_000259700.wav/en_robo_coqui_000254180_000259700.wav_ru_835.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/fr_yan_lecun_00000080.wav/fr_yan_lecun_00000080.wav_ru_2259.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/pt_lula_00000118.wav/pt_lula_00000118.wav_ru_3379.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/ar_george_00000000.wav/ar_george_00000000.wav_ru_147.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/zh_jack_ma_00000000.wav/zh_jack_ma_00000000.wav_ru_3491.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/fr_Jean_11_00000000.wav/fr_Jean_11_00000000.wav_ru_1587.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/fr_julian_00000010.wav/fr_julian_00000010.wav_ru_1923.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/pt_dilma_00000003.wav/pt_dilma_00000003.wav_ru_2963.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/pt_bolsonaro_00000172.wav/pt_bolsonaro_00000172.wav_ru_2531.wav"></audio></td>
+    </tr>
+    <tr>
+      <th>XTTS Fine-tuning</th>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/en_whisper_voice_00000015.wav/en_whisper_voice_00000015.wav_ru_1235.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/en_miley_00000044_00000056.wav/en_miley_00000044_00000056.wav_ru_451.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/en_robo_coqui_000254180_000259700.wav/en_robo_coqui_000254180_000259700.wav_ru_835.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/fr_yan_lecun_00000080.wav/fr_yan_lecun_00000080.wav_ru_2259.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/pt_lula_00000118.wav/pt_lula_00000118.wav_ru_3379.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/ar_george_00000000.wav/ar_george_00000000.wav_ru_147.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/zh_jack_ma_00000000.wav/zh_jack_ma_00000000.wav_ru_3491.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/fr_Jean_11_00000000.wav/fr_Jean_11_00000000.wav_ru_1587.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/fr_julian_00000010.wav/fr_julian_00000010.wav_ru_1923.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/pt_dilma_00000003.wav/pt_dilma_00000003.wav_ru_2963.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/pt_bolsonaro_00000172.wav/pt_bolsonaro_00000172.wav_ru_2531.wav"></audio></td>
+    </tr>
+  </tbody>
+</table>
+
+
+ <p><b>Dutch samples</b></p>
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="11" halign="left">generated_wav</th>
+    </tr>
+    <tr>
+      <th>Speaker Name</th>
+      <th>en_whisper_female</th>
+      <th>en_female</th>
+      <th>en_robo_coqui</th>
+      <th>fr_male1</th>
+      <th>pt_male1</th>
+      <th>ar_male</th>
+      <th>zh_male</th>
+      <th>fr_male2</th>
+      <th>fr_male3</th>
+      <th>pt_female</th>
+      <th>pt_male2</th>
+    </tr>
+    <tr>
+      <th>Model Name</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Speaker Reference</th>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/en_whisper_voice_00000015.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/en_miley_00000044_00000056.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/en_robo_coqui_000254180_000259700.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/fr_yan_lecun_00000080.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/pt_lula_00000118.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/ar_george_00000000.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/zh_jack_ma_00000000.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/fr_Jean_11_00000000.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/fr_julian_00000010.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/pt_dilma_00000003.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/pt_bolsonaro_00000172.wav"></audio></td>
+    </tr>
+    <tr>
+      <th>XTTS Zero-shot</th>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/en_whisper_voice_00000015.wav/en_whisper_voice_00000015.wav_nl_1095.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/en_miley_00000044_00000056.wav/en_miley_00000044_00000056.wav_nl_519.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/en_robo_coqui_000254180_000259700.wav/en_robo_coqui_000254180_000259700.wav_nl_999.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/fr_yan_lecun_00000080.wav/fr_yan_lecun_00000080.wav_nl_2327.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/pt_lula_00000118.wav/pt_lula_00000118.wav_nl_3207.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/ar_george_00000000.wav/ar_george_00000000.wav_nl_39.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/zh_jack_ma_00000000.wav/zh_jack_ma_00000000.wav_nl_3671.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/fr_Jean_11_00000000.wav/fr_Jean_11_00000000.wav_nl_1431.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/fr_julian_00000010.wav/fr_julian_00000010.wav_nl_1751.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/pt_dilma_00000003.wav/pt_dilma_00000003.wav_nl_2999.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/pt_bolsonaro_00000172.wav/pt_bolsonaro_00000172.wav_nl_2775.wav"></audio></td>
+    </tr>
+    <tr>
+      <th>XTTS Fine-tuning</th>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/en_whisper_voice_00000015.wav/en_whisper_voice_00000015.wav_nl_1095.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/en_miley_00000044_00000056.wav/en_miley_00000044_00000056.wav_nl_519.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/en_robo_coqui_000254180_000259700.wav/en_robo_coqui_000254180_000259700.wav_nl_999.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/fr_yan_lecun_00000080.wav/fr_yan_lecun_00000080.wav_nl_2327.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/pt_lula_00000118.wav/pt_lula_00000118.wav_nl_3207.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/ar_george_00000000.wav/ar_george_00000000.wav_nl_39.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/zh_jack_ma_00000000.wav/zh_jack_ma_00000000.wav_nl_3671.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/fr_Jean_11_00000000.wav/fr_Jean_11_00000000.wav_nl_1431.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/fr_julian_00000010.wav/fr_julian_00000010.wav_nl_1751.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/pt_dilma_00000003.wav/pt_dilma_00000003.wav_nl_2999.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/pt_bolsonaro_00000172.wav/pt_bolsonaro_00000172.wav_nl_2775.wav"></audio></td>
+    </tr>
+  </tbody>
+</table>
+
+
+ <p><b>Czech samples</b></p>
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="11" halign="left">generated_wav</th>
+    </tr>
+    <tr>
+      <th>Speaker Name</th>
+      <th>en_whisper_female</th>
+      <th>en_female</th>
+      <th>en_robo_coqui</th>
+      <th>fr_male1</th>
+      <th>pt_male1</th>
+      <th>ar_male</th>
+      <th>zh_male</th>
+      <th>fr_male2</th>
+      <th>fr_male3</th>
+      <th>pt_female</th>
+      <th>pt_male2</th>
+    </tr>
+    <tr>
+      <th>Model Name</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Speaker Reference</th>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/en_whisper_voice_00000015.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/en_miley_00000044_00000056.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/en_robo_coqui_000254180_000259700.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/fr_yan_lecun_00000080.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/pt_lula_00000118.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/ar_george_00000000.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/zh_jack_ma_00000000.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/fr_Jean_11_00000000.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/fr_julian_00000010.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/pt_dilma_00000003.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/pt_bolsonaro_00000172.wav"></audio></td>
+    </tr>
+    <tr>
+      <th>XTTS Zero-shot</th>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/en_whisper_voice_00000015.wav/en_whisper_voice_00000015.wav_cs_1302.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/en_miley_00000044_00000056.wav/en_miley_00000044_00000056.wav_cs_406.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/en_robo_coqui_000254180_000259700.wav/en_robo_coqui_000254180_000259700.wav_cs_902.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/fr_yan_lecun_00000080.wav/fr_yan_lecun_00000080.wav_cs_2406.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/pt_lula_00000118.wav/pt_lula_00000118.wav_cs_3270.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/ar_george_00000000.wav/ar_george_00000000.wav_cs_102.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/zh_jack_ma_00000000.wav/zh_jack_ma_00000000.wav_cs_3574.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/fr_Jean_11_00000000.wav/fr_Jean_11_00000000.wav_cs_1718.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/fr_julian_00000010.wav/fr_julian_00000010.wav_cs_1750.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/pt_dilma_00000003.wav/pt_dilma_00000003.wav_cs_2902.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/pt_bolsonaro_00000172.wav/pt_bolsonaro_00000172.wav_cs_2742.wav"></audio></td>
+    </tr>
+    <tr>
+      <th>XTTS Fine-tuning</th>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/en_whisper_voice_00000015.wav/en_whisper_voice_00000015.wav_cs_1302.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/en_miley_00000044_00000056.wav/en_miley_00000044_00000056.wav_cs_406.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/en_robo_coqui_000254180_000259700.wav/en_robo_coqui_000254180_000259700.wav_cs_902.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/fr_yan_lecun_00000080.wav/fr_yan_lecun_00000080.wav_cs_2406.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/pt_lula_00000118.wav/pt_lula_00000118.wav_cs_3270.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/ar_george_00000000.wav/ar_george_00000000.wav_cs_102.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/zh_jack_ma_00000000.wav/zh_jack_ma_00000000.wav_cs_3574.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/fr_Jean_11_00000000.wav/fr_Jean_11_00000000.wav_cs_1718.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/fr_julian_00000010.wav/fr_julian_00000010.wav_cs_1750.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/pt_dilma_00000003.wav/pt_dilma_00000003.wav_cs_2902.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/pt_bolsonaro_00000172.wav/pt_bolsonaro_00000172.wav_cs_2742.wav"></audio></td>
+    </tr>
+  </tbody>
+</table>
+
+
+ <p><b>Arabic samples</b></p>
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="11" halign="left">generated_wav</th>
+    </tr>
+    <tr>
+      <th>Speaker Name</th>
+      <th>en_whisper_female</th>
+      <th>en_female</th>
+      <th>en_robo_coqui</th>
+      <th>fr_male1</th>
+      <th>pt_male1</th>
+      <th>ar_male</th>
+      <th>zh_male</th>
+      <th>fr_male2</th>
+      <th>fr_male3</th>
+      <th>pt_female</th>
+      <th>pt_male2</th>
+    </tr>
+    <tr>
+      <th>Model Name</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Speaker Reference</th>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/en_whisper_voice_00000015.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/en_miley_00000044_00000056.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/en_robo_coqui_000254180_000259700.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/fr_yan_lecun_00000080.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/pt_lula_00000118.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/ar_george_00000000.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/zh_jack_ma_00000000.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/fr_Jean_11_00000000.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/fr_julian_00000010.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/pt_dilma_00000003.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/pt_bolsonaro_00000172.wav"></audio></td>
+    </tr>
+    <tr>
+      <th>XTTS Zero-shot</th>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/en_whisper_voice_00000015.wav/en_whisper_voice_00000015.wav_ar_1301.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/en_miley_00000044_00000056.wav/en_miley_00000044_00000056.wav_ar_469.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/en_robo_coqui_000254180_000259700.wav/en_robo_coqui_000254180_000259700.wav_ar_741.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/fr_yan_lecun_00000080.wav/fr_yan_lecun_00000080.wav_ar_2133.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/pt_lula_00000118.wav/pt_lula_00000118.wav_ar_3445.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/ar_george_00000000.wav/ar_george_00000000.wav_ar_213.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/zh_jack_ma_00000000.wav/zh_jack_ma_00000000.wav_ar_3781.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/fr_Jean_11_00000000.wav/fr_Jean_11_00000000.wav_ar_1509.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/fr_julian_00000010.wav/fr_julian_00000010.wav_ar_1925.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/pt_dilma_00000003.wav/pt_dilma_00000003.wav_ar_3093.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/pt_bolsonaro_00000172.wav/pt_bolsonaro_00000172.wav_ar_2453.wav"></audio></td>
+    </tr>
+    <tr>
+      <th>XTTS Fine-tuning</th>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/en_whisper_voice_00000015.wav/en_whisper_voice_00000015.wav_ar_1301.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/en_miley_00000044_00000056.wav/en_miley_00000044_00000056.wav_ar_469.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/en_robo_coqui_000254180_000259700.wav/en_robo_coqui_000254180_000259700.wav_ar_741.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/fr_yan_lecun_00000080.wav/fr_yan_lecun_00000080.wav_ar_2133.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/pt_lula_00000118.wav/pt_lula_00000118.wav_ar_3445.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/ar_george_00000000.wav/ar_george_00000000.wav_ar_213.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/zh_jack_ma_00000000.wav/zh_jack_ma_00000000.wav_ar_3781.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/fr_Jean_11_00000000.wav/fr_Jean_11_00000000.wav_ar_1509.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/fr_julian_00000010.wav/fr_julian_00000010.wav_ar_1925.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/pt_dilma_00000003.wav/pt_dilma_00000003.wav_ar_3093.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/pt_bolsonaro_00000172.wav/pt_bolsonaro_00000172.wav_ar_2453.wav"></audio></td>
+    </tr>
+  </tbody>
+</table>
+
+
+ <p><b>Hungarian samples</b></p>
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="11" halign="left">generated_wav</th>
+    </tr>
+    <tr>
+      <th>Speaker Name</th>
+      <th>en_whisper_female</th>
+      <th>en_female</th>
+      <th>en_robo_coqui</th>
+      <th>fr_male1</th>
+      <th>pt_male1</th>
+      <th>ar_male</th>
+      <th>zh_male</th>
+      <th>fr_male2</th>
+      <th>fr_male3</th>
+      <th>pt_female</th>
+      <th>pt_male2</th>
+    </tr>
+    <tr>
+      <th>Model Name</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Speaker Reference</th>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/en_whisper_voice_00000015.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/en_miley_00000044_00000056.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/en_robo_coqui_000254180_000259700.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/fr_yan_lecun_00000080.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/pt_lula_00000118.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/ar_george_00000000.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/zh_jack_ma_00000000.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/fr_Jean_11_00000000.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/fr_julian_00000010.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/pt_dilma_00000003.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/pt_bolsonaro_00000172.wav"></audio></td>
+    </tr>
+    <tr>
+      <th>XTTS Zero-shot</th>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/en_whisper_voice_00000015.wav/en_whisper_voice_00000015.wav_hu_1329.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/en_miley_00000044_00000056.wav/en_miley_00000044_00000056.wav_hu_417.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/en_robo_coqui_000254180_000259700.wav/en_robo_coqui_000254180_000259700.wav_hu_785.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/fr_yan_lecun_00000080.wav/fr_yan_lecun_00000080.wav_hu_2161.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/pt_lula_00000118.wav/pt_lula_00000118.wav_hu_3441.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/ar_george_00000000.wav/ar_george_00000000.wav_hu_241.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/zh_jack_ma_00000000.wav/zh_jack_ma_00000000.wav_hu_3521.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/fr_Jean_11_00000000.wav/fr_Jean_11_00000000.wav_hu_1425.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/fr_julian_00000010.wav/fr_julian_00000010.wav_hu_1953.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/pt_dilma_00000003.wav/pt_dilma_00000003.wav_hu_2833.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/pt_bolsonaro_00000172.wav/pt_bolsonaro_00000172.wav_hu_2545.wav"></audio></td>
+    </tr>
+    <tr>
+      <th>XTTS Fine-tuning</th>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/en_whisper_voice_00000015.wav/en_whisper_voice_00000015.wav_hu_1329.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/en_miley_00000044_00000056.wav/en_miley_00000044_00000056.wav_hu_417.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/en_robo_coqui_000254180_000259700.wav/en_robo_coqui_000254180_000259700.wav_hu_785.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/fr_yan_lecun_00000080.wav/fr_yan_lecun_00000080.wav_hu_2161.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/pt_lula_00000118.wav/pt_lula_00000118.wav_hu_3441.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/ar_george_00000000.wav/ar_george_00000000.wav_hu_241.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/zh_jack_ma_00000000.wav/zh_jack_ma_00000000.wav_hu_3521.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/fr_Jean_11_00000000.wav/fr_Jean_11_00000000.wav_hu_1425.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/fr_julian_00000010.wav/fr_julian_00000010.wav_hu_1953.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/pt_dilma_00000003.wav/pt_dilma_00000003.wav_hu_2833.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/pt_bolsonaro_00000172.wav/pt_bolsonaro_00000172.wav_hu_2545.wav"></audio></td>
+    </tr>
+  </tbody>
+</table>
+
+
+ <p><b>Korean samples</b></p>
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="11" halign="left">generated_wav</th>
+    </tr>
+    <tr>
+      <th>Speaker Name</th>
+      <th>en_whisper_female</th>
+      <th>en_female</th>
+      <th>en_robo_coqui</th>
+      <th>fr_male1</th>
+      <th>pt_male1</th>
+      <th>ar_male</th>
+      <th>zh_male</th>
+      <th>fr_male2</th>
+      <th>fr_male3</th>
+      <th>pt_female</th>
+      <th>pt_male2</th>
+    </tr>
+    <tr>
+      <th>Model Name</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Speaker Reference</th>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/en_whisper_voice_00000015.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/en_miley_00000044_00000056.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/en_robo_coqui_000254180_000259700.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/fr_yan_lecun_00000080.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/pt_lula_00000118.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/ar_george_00000000.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/zh_jack_ma_00000000.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/fr_Jean_11_00000000.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/fr_julian_00000010.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/pt_dilma_00000003.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/pt_bolsonaro_00000172.wav"></audio></td>
+    </tr>
+    <tr>
+      <th>XTTS Zero-shot</th>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/en_whisper_voice_00000015.wav/en_whisper_voice_00000015.wav_ko_1280.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/en_miley_00000044_00000056.wav/en_miley_00000044_00000056.wav_ko_592.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/en_robo_coqui_000254180_000259700.wav/en_robo_coqui_000254180_000259700.wav_ko_992.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/fr_yan_lecun_00000080.wav/fr_yan_lecun_00000080.wav_ko_2160.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/pt_lula_00000118.wav/pt_lula_00000118.wav_ko_3440.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/ar_george_00000000.wav/ar_george_00000000.wav_ko_304.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/zh_jack_ma_00000000.wav/zh_jack_ma_00000000.wav_ko_3584.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/fr_Jean_11_00000000.wav/fr_Jean_11_00000000.wav_ko_1696.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/fr_julian_00000010.wav/fr_julian_00000010.wav_ko_2048.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/pt_dilma_00000003.wav/pt_dilma_00000003.wav_ko_3024.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/pt_bolsonaro_00000172.wav/pt_bolsonaro_00000172.wav_ko_2624.wav"></audio></td>
+    </tr>
+    <tr>
+      <th>XTTS Fine-tuning</th>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/en_whisper_voice_00000015.wav/en_whisper_voice_00000015.wav_ko_1280.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/en_miley_00000044_00000056.wav/en_miley_00000044_00000056.wav_ko_592.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/en_robo_coqui_000254180_000259700.wav/en_robo_coqui_000254180_000259700.wav_ko_992.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/fr_yan_lecun_00000080.wav/fr_yan_lecun_00000080.wav_ko_2160.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/pt_lula_00000118.wav/pt_lula_00000118.wav_ko_3440.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/ar_george_00000000.wav/ar_george_00000000.wav_ko_304.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/zh_jack_ma_00000000.wav/zh_jack_ma_00000000.wav_ko_3584.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/fr_Jean_11_00000000.wav/fr_Jean_11_00000000.wav_ko_1696.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/fr_julian_00000010.wav/fr_julian_00000010.wav_ko_2048.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/pt_dilma_00000003.wav/pt_dilma_00000003.wav_ko_3024.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/pt_bolsonaro_00000172.wav/pt_bolsonaro_00000172.wav_ko_2624.wav"></audio></td>
+    </tr>
+  </tbody>
+</table>
+
+
+ <p><b>Japanese samples</b></p>
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="11" halign="left">generated_wav</th>
+    </tr>
+    <tr>
+      <th>Speaker Name</th>
+      <th>en_whisper_female</th>
+      <th>en_female</th>
+      <th>en_robo_coqui</th>
+      <th>fr_male1</th>
+      <th>pt_male1</th>
+      <th>ar_male</th>
+      <th>zh_male</th>
+      <th>fr_male2</th>
+      <th>fr_male3</th>
+      <th>pt_female</th>
+      <th>pt_male2</th>
+    </tr>
+    <tr>
+      <th>Model Name</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Speaker Reference</th>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/en_whisper_voice_00000015.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/en_miley_00000044_00000056.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/en_robo_coqui_000254180_000259700.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/fr_yan_lecun_00000080.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/pt_lula_00000118.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/ar_george_00000000.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/zh_jack_ma_00000000.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/fr_Jean_11_00000000.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/fr_julian_00000010.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/pt_dilma_00000003.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/References_FT/pt_bolsonaro_00000172.wav"></audio></td>
+    </tr>
+    <tr>
+      <th>XTTS Zero-shot</th>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/en_whisper_voice_00000015.wav/en_whisper_voice_00000015.wav_ja_1106.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/en_miley_00000044_00000056.wav/en_miley_00000044_00000056.wav_ja_594.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/en_robo_coqui_000254180_000259700.wav/en_robo_coqui_000254180_000259700.wav_ja_994.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/fr_yan_lecun_00000080.wav/fr_yan_lecun_00000080.wav_ja_2354.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/pt_lula_00000118.wav/pt_lula_00000118.wav_ja_3458.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/ar_george_00000000.wav/ar_george_00000000.wav_ja_258.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/zh_jack_ma_00000000.wav/zh_jack_ma_00000000.wav_ja_3490.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/fr_Jean_11_00000000.wav/fr_Jean_11_00000000.wav_ja_1554.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/fr_julian_00000010.wav/fr_julian_00000010.wav_ja_1906.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/pt_dilma_00000003.wav/pt_dilma_00000003.wav_ja_3122.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_no_FT/Audios/pt_bolsonaro_00000172.wav/pt_bolsonaro_00000172.wav_ja_2466.wav"></audio></td>
+    </tr>
+    <tr>
+      <th>XTTS Fine-tuning</th>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/en_whisper_voice_00000015.wav/en_whisper_voice_00000015.wav_ja_1106.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/en_miley_00000044_00000056.wav/en_miley_00000044_00000056.wav_ja_594.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/en_robo_coqui_000254180_000259700.wav/en_robo_coqui_000254180_000259700.wav_ja_994.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/fr_yan_lecun_00000080.wav/fr_yan_lecun_00000080.wav_ja_2354.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/pt_lula_00000118.wav/pt_lula_00000118.wav_ja_3458.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/ar_george_00000000.wav/ar_george_00000000.wav_ja_258.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/zh_jack_ma_00000000.wav/zh_jack_ma_00000000.wav_ja_3490.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/fr_Jean_11_00000000.wav/fr_Jean_11_00000000.wav_ja_1554.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/fr_julian_00000010.wav/fr_julian_00000010.wav_ja_1906.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/pt_dilma_00000003.wav/pt_dilma_00000003.wav_ja_3122.wav"></audio></td>
+      <td><audio controls style="width: 110px;" src="audios_demo/FT/XTTS_FT/Audios/pt_bolsonaro_00000172.wav/pt_bolsonaro_00000172.wav_ja_2466.wav"></audio></td>
+    </tr>
+  </tbody>
+</table>
+CSV saved at: samples_demo_FT.csv
+Audio not deleted: audios_demo/FT/References_FT/fr_julian_00000010.wav
+Audio not deleted: audios_demo/FT/References_FT/fr_yan_lecun_00000080.wav
+Audio not deleted: audios_demo/FT/References_FT/fr_Jean_11_00000000.wav
+Audio not deleted: audios_demo/FT/References_FT/pt_lula_00000118.wav
+Audio not deleted: audios_demo/FT/References_FT/pt_bolsonaro_00000172.wav
+Audio not deleted: audios_demo/FT/References_FT/pt_dilma_00000003.wav
+Audio not deleted: audios_demo/FT/References_FT/en_miley_00000044_00000056.wav
+Audio not deleted: audios_demo/FT/References_FT/ar_george_00000000.wav
+Audio not deleted: audios_demo/FT/References_FT/zh_jack_ma_00000000.wav
+Audio not deleted: audios_demo/FT/References_FT/en_robo_coqui_000254180_000259700.wav
+Audio not deleted: audios_demo/FT/References_FT/en_whisper_voice_00000015.wav
+Audio not deleted: audios_demo/FT/References_FT_bk/fr_julian_00000010.wav
+Audio not deleted: audios_demo/FT/References_FT_bk/fr_yan_lecun_00000080.wav
+Audio not deleted: audios_demo/FT/References_FT_bk/fr_Jean_11_00000000.wav
+Audio not deleted: audios_demo/FT/References_FT_bk/pt_lula_00000118.wav
+Audio not deleted: audios_demo/FT/References_FT_bk/pt_bolsonaro_00000172.wav
+Audio not deleted: audios_demo/FT/References_FT_bk/pt_dilma_00000003.wav
+Audio not deleted: audios_demo/FT/References_FT_bk/en_miley_00000044_00000056.wav
+Audio not deleted: audios_demo/FT/References_FT_bk/ar_george_00000000.wav
+Audio not deleted: audios_demo/FT/References_FT_bk/zh_jack_ma_00000000.wav
+Audio not deleted: audios_demo/FT/References_FT_bk/en_robo_coqui_000254180_000259700.wav
+Audio not deleted: audios_demo/FT/References_FT_bk/en_whisper_voice_00000015.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/ar_george_00000000.wav/ar_george_00000000.wav_tr_24.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/ar_george_00000000.wav/ar_george_00000000.wav_nl_39.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/ar_george_00000000.wav/ar_george_00000000.wav_cs_102.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/ar_george_00000000.wav/ar_george_00000000.wav_en_127.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/ar_george_00000000.wav/ar_george_00000000.wav_ru_147.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/ar_george_00000000.wav/ar_george_00000000.wav_de_158.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/ar_george_00000000.wav/ar_george_00000000.wav_zh-cn_164.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/ar_george_00000000.wav/ar_george_00000000.wav_pt_186.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/ar_george_00000000.wav/ar_george_00000000.wav_it_203.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/ar_george_00000000.wav/ar_george_00000000.wav_fr_205.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/ar_george_00000000.wav/ar_george_00000000.wav_ar_213.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/ar_george_00000000.wav/ar_george_00000000.wav_pl_217.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/ar_george_00000000.wav/ar_george_00000000.wav_es_236.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/ar_george_00000000.wav/ar_george_00000000.wav_hu_241.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/ar_george_00000000.wav/ar_george_00000000.wav_ja_258.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/ar_george_00000000.wav/ar_george_00000000.wav_ko_304.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/en_miley_00000044_00000056.wav/en_miley_00000044_00000056.wav_pl_393.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/en_miley_00000044_00000056.wav/en_miley_00000044_00000056.wav_zh-cn_404.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/en_miley_00000044_00000056.wav/en_miley_00000044_00000056.wav_cs_406.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/en_miley_00000044_00000056.wav/en_miley_00000044_00000056.wav_hu_417.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/en_miley_00000044_00000056.wav/en_miley_00000044_00000056.wav_ru_451.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/en_miley_00000044_00000056.wav/en_miley_00000044_00000056.wav_ar_469.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/en_miley_00000044_00000056.wav/en_miley_00000044_00000056.wav_it_475.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/en_miley_00000044_00000056.wav/en_miley_00000044_00000056.wav_de_494.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/en_miley_00000044_00000056.wav/en_miley_00000044_00000056.wav_nl_519.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/en_miley_00000044_00000056.wav/en_miley_00000044_00000056.wav_en_591.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/en_miley_00000044_00000056.wav/en_miley_00000044_00000056.wav_ko_592.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/en_miley_00000044_00000056.wav/en_miley_00000044_00000056.wav_ja_594.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/en_miley_00000044_00000056.wav/en_miley_00000044_00000056.wav_es_620.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/en_miley_00000044_00000056.wav/en_miley_00000044_00000056.wav_pt_634.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/en_miley_00000044_00000056.wav/en_miley_00000044_00000056.wav_fr_637.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/en_miley_00000044_00000056.wav/en_miley_00000044_00000056.wav_tr_696.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/en_robo_coqui_000254180_000259700.wav/en_robo_coqui_000254180_000259700.wav_pt_698.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/en_robo_coqui_000254180_000259700.wav/en_robo_coqui_000254180_000259700.wav_ar_741.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/en_robo_coqui_000254180_000259700.wav/en_robo_coqui_000254180_000259700.wav_es_764.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/en_robo_coqui_000254180_000259700.wav/en_robo_coqui_000254180_000259700.wav_hu_785.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/en_robo_coqui_000254180_000259700.wav/en_robo_coqui_000254180_000259700.wav_ru_835.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/en_robo_coqui_000254180_000259700.wav/en_robo_coqui_000254180_000259700.wav_it_859.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/en_robo_coqui_000254180_000259700.wav/en_robo_coqui_000254180_000259700.wav_cs_902.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/en_robo_coqui_000254180_000259700.wav/en_robo_coqui_000254180_000259700.wav_de_910.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/en_robo_coqui_000254180_000259700.wav/en_robo_coqui_000254180_000259700.wav_pl_937.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/en_robo_coqui_000254180_000259700.wav/en_robo_coqui_000254180_000259700.wav_zh-cn_964.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/en_robo_coqui_000254180_000259700.wav/en_robo_coqui_000254180_000259700.wav_ko_992.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/en_robo_coqui_000254180_000259700.wav/en_robo_coqui_000254180_000259700.wav_ja_994.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/en_robo_coqui_000254180_000259700.wav/en_robo_coqui_000254180_000259700.wav_nl_999.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/en_robo_coqui_000254180_000259700.wav/en_robo_coqui_000254180_000259700.wav_tr_1016.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/en_robo_coqui_000254180_000259700.wav/en_robo_coqui_000254180_000259700.wav_en_1023.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/en_robo_coqui_000254180_000259700.wav/en_robo_coqui_000254180_000259700.wav_fr_1037.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/en_whisper_voice_00000015.wav/en_whisper_voice_00000015.wav_de_1070.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/en_whisper_voice_00000015.wav/en_whisper_voice_00000015.wav_nl_1095.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/en_whisper_voice_00000015.wav/en_whisper_voice_00000015.wav_ja_1106.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/en_whisper_voice_00000015.wav/en_whisper_voice_00000015.wav_fr_1117.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/en_whisper_voice_00000015.wav/en_whisper_voice_00000015.wav_en_1135.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/en_whisper_voice_00000015.wav/en_whisper_voice_00000015.wav_pt_1178.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/en_whisper_voice_00000015.wav/en_whisper_voice_00000015.wav_es_1212.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/en_whisper_voice_00000015.wav/en_whisper_voice_00000015.wav_ru_1235.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/en_whisper_voice_00000015.wav/en_whisper_voice_00000015.wav_tr_1240.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/en_whisper_voice_00000015.wav/en_whisper_voice_00000015.wav_zh-cn_1252.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/en_whisper_voice_00000015.wav/en_whisper_voice_00000015.wav_pl_1257.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/en_whisper_voice_00000015.wav/en_whisper_voice_00000015.wav_ko_1280.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/en_whisper_voice_00000015.wav/en_whisper_voice_00000015.wav_it_1291.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/en_whisper_voice_00000015.wav/en_whisper_voice_00000015.wav_ar_1301.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/en_whisper_voice_00000015.wav/en_whisper_voice_00000015.wav_cs_1302.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/en_whisper_voice_00000015.wav/en_whisper_voice_00000015.wav_hu_1329.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/fr_Jean_11_00000000.wav/fr_Jean_11_00000000.wav_hu_1425.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/fr_Jean_11_00000000.wav/fr_Jean_11_00000000.wav_nl_1431.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/fr_Jean_11_00000000.wav/fr_Jean_11_00000000.wav_zh-cn_1492.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/fr_Jean_11_00000000.wav/fr_Jean_11_00000000.wav_ar_1509.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/fr_Jean_11_00000000.wav/fr_Jean_11_00000000.wav_en_1535.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/fr_Jean_11_00000000.wav/fr_Jean_11_00000000.wav_ja_1554.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/fr_Jean_11_00000000.wav/fr_Jean_11_00000000.wav_ru_1587.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/fr_Jean_11_00000000.wav/fr_Jean_11_00000000.wav_de_1598.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/fr_Jean_11_00000000.wav/fr_Jean_11_00000000.wav_pt_1610.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/fr_Jean_11_00000000.wav/fr_Jean_11_00000000.wav_es_1644.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/fr_Jean_11_00000000.wav/fr_Jean_11_00000000.wav_pl_1657.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/fr_Jean_11_00000000.wav/fr_Jean_11_00000000.wav_it_1691.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/fr_Jean_11_00000000.wav/fr_Jean_11_00000000.wav_ko_1696.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/fr_Jean_11_00000000.wav/fr_Jean_11_00000000.wav_cs_1718.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/fr_Jean_11_00000000.wav/fr_Jean_11_00000000.wav_tr_1720.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/fr_Jean_11_00000000.wav/fr_Jean_11_00000000.wav_fr_1725.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/fr_julian_00000010.wav/fr_julian_00000010.wav_de_1790.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/fr_julian_00000010.wav/fr_julian_00000010.wav_tr_1848.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/fr_julian_00000010.wav/fr_julian_00000010.wav_pl_1881.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/fr_julian_00000010.wav/fr_julian_00000010.wav_en_1887.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/fr_julian_00000010.wav/fr_julian_00000010.wav_ja_1906.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/fr_julian_00000010.wav/fr_julian_00000010.wav_ru_1923.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/fr_julian_00000010.wav/fr_julian_00000010.wav_ar_1925.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/fr_julian_00000010.wav/fr_julian_00000010.wav_hu_1953.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/fr_julian_00000010.wav/fr_julian_00000010.wav_fr_1997.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/fr_julian_00000010.wav/fr_julian_00000010.wav_pt_2026.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/fr_julian_00000010.wav/fr_julian_00000010.wav_ko_2048.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/fr_julian_00000010.wav/fr_julian_00000010.wav_it_2059.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/fr_julian_00000010.wav/fr_julian_00000010.wav_es_2092.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/fr_julian_00000010.wav/fr_julian_00000010.wav_cs_1750.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/fr_julian_00000010.wav/fr_julian_00000010.wav_nl_1751.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/fr_julian_00000010.wav/fr_julian_00000010.wav_zh-cn_1764.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/fr_yan_lecun_00000080.wav/fr_yan_lecun_00000080.wav_pt_2250.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/fr_yan_lecun_00000080.wav/fr_yan_lecun_00000080.wav_ru_2259.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/fr_yan_lecun_00000080.wav/fr_yan_lecun_00000080.wav_fr_2109.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/fr_yan_lecun_00000080.wav/fr_yan_lecun_00000080.wav_ar_2133.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/fr_yan_lecun_00000080.wav/fr_yan_lecun_00000080.wav_ko_2160.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/fr_yan_lecun_00000080.wav/fr_yan_lecun_00000080.wav_hu_2161.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/fr_yan_lecun_00000080.wav/fr_yan_lecun_00000080.wav_zh-cn_2292.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/fr_yan_lecun_00000080.wav/fr_yan_lecun_00000080.wav_nl_2327.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/fr_yan_lecun_00000080.wav/fr_yan_lecun_00000080.wav_de_2334.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/fr_yan_lecun_00000080.wav/fr_yan_lecun_00000080.wav_it_2347.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/fr_yan_lecun_00000080.wav/fr_yan_lecun_00000080.wav_ja_2354.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/fr_yan_lecun_00000080.wav/fr_yan_lecun_00000080.wav_tr_2392.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/fr_yan_lecun_00000080.wav/fr_yan_lecun_00000080.wav_cs_2406.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/fr_yan_lecun_00000080.wav/fr_yan_lecun_00000080.wav_en_2415.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/fr_yan_lecun_00000080.wav/fr_yan_lecun_00000080.wav_pl_2425.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/fr_yan_lecun_00000080.wav/fr_yan_lecun_00000080.wav_es_2428.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/pt_bolsonaro_00000172.wav/pt_bolsonaro_00000172.wav_tr_2520.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/pt_bolsonaro_00000172.wav/pt_bolsonaro_00000172.wav_ru_2531.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/pt_bolsonaro_00000172.wav/pt_bolsonaro_00000172.wav_hu_2545.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/pt_bolsonaro_00000172.wav/pt_bolsonaro_00000172.wav_es_2556.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/pt_bolsonaro_00000172.wav/pt_bolsonaro_00000172.wav_pt_2570.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/pt_bolsonaro_00000172.wav/pt_bolsonaro_00000172.wav_pl_2585.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/pt_bolsonaro_00000172.wav/pt_bolsonaro_00000172.wav_fr_2605.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/pt_bolsonaro_00000172.wav/pt_bolsonaro_00000172.wav_ko_2624.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/pt_bolsonaro_00000172.wav/pt_bolsonaro_00000172.wav_de_2638.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/pt_bolsonaro_00000172.wav/pt_bolsonaro_00000172.wav_zh-cn_2708.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/pt_bolsonaro_00000172.wav/pt_bolsonaro_00000172.wav_cs_2742.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/pt_bolsonaro_00000172.wav/pt_bolsonaro_00000172.wav_nl_2775.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/pt_bolsonaro_00000172.wav/pt_bolsonaro_00000172.wav_it_2779.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/pt_bolsonaro_00000172.wav/pt_bolsonaro_00000172.wav_ar_2453.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/pt_bolsonaro_00000172.wav/pt_bolsonaro_00000172.wav_ja_2466.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/pt_bolsonaro_00000172.wav/pt_bolsonaro_00000172.wav_en_2495.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/pt_dilma_00000003.wav/pt_dilma_00000003.wav_fr_2813.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/pt_dilma_00000003.wav/pt_dilma_00000003.wav_hu_2833.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/pt_dilma_00000003.wav/pt_dilma_00000003.wav_it_2859.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/pt_dilma_00000003.wav/pt_dilma_00000003.wav_zh-cn_2868.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/pt_dilma_00000003.wav/pt_dilma_00000003.wav_cs_2902.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/pt_dilma_00000003.wav/pt_dilma_00000003.wav_en_2927.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/pt_dilma_00000003.wav/pt_dilma_00000003.wav_ru_2963.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/pt_dilma_00000003.wav/pt_dilma_00000003.wav_es_2988.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/pt_dilma_00000003.wav/pt_dilma_00000003.wav_nl_2999.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/pt_dilma_00000003.wav/pt_dilma_00000003.wav_ko_3024.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/pt_dilma_00000003.wav/pt_dilma_00000003.wav_pl_3033.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/pt_dilma_00000003.wav/pt_dilma_00000003.wav_de_3038.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/pt_dilma_00000003.wav/pt_dilma_00000003.wav_pt_3082.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/pt_dilma_00000003.wav/pt_dilma_00000003.wav_ar_3093.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/pt_dilma_00000003.wav/pt_dilma_00000003.wav_tr_3096.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/pt_dilma_00000003.wav/pt_dilma_00000003.wav_ja_3122.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/pt_lula_00000118.wav/pt_lula_00000118.wav_en_3151.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/pt_lula_00000118.wav/pt_lula_00000118.wav_nl_3207.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/pt_lula_00000118.wav/pt_lula_00000118.wav_it_3227.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/pt_lula_00000118.wav/pt_lula_00000118.wav_pl_3257.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/pt_lula_00000118.wav/pt_lula_00000118.wav_cs_3270.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/pt_lula_00000118.wav/pt_lula_00000118.wav_zh-cn_3348.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/pt_lula_00000118.wav/pt_lula_00000118.wav_pt_3354.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/pt_lula_00000118.wav/pt_lula_00000118.wav_es_3356.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/pt_lula_00000118.wav/pt_lula_00000118.wav_ru_3379.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/pt_lula_00000118.wav/pt_lula_00000118.wav_de_3406.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/pt_lula_00000118.wav/pt_lula_00000118.wav_fr_3437.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/pt_lula_00000118.wav/pt_lula_00000118.wav_ko_3440.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/pt_lula_00000118.wav/pt_lula_00000118.wav_hu_3441.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/pt_lula_00000118.wav/pt_lula_00000118.wav_ar_3445.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/pt_lula_00000118.wav/pt_lula_00000118.wav_tr_3448.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/pt_lula_00000118.wav/pt_lula_00000118.wav_ja_3458.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/zh_jack_ma_00000000.wav/zh_jack_ma_00000000.wav_ja_3490.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/zh_jack_ma_00000000.wav/zh_jack_ma_00000000.wav_ru_3491.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/zh_jack_ma_00000000.wav/zh_jack_ma_00000000.wav_hu_3521.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/zh_jack_ma_00000000.wav/zh_jack_ma_00000000.wav_es_3532.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/zh_jack_ma_00000000.wav/zh_jack_ma_00000000.wav_cs_3574.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/zh_jack_ma_00000000.wav/zh_jack_ma_00000000.wav_ko_3584.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/zh_jack_ma_00000000.wav/zh_jack_ma_00000000.wav_it_3627.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/zh_jack_ma_00000000.wav/zh_jack_ma_00000000.wav_nl_3671.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/zh_jack_ma_00000000.wav/zh_jack_ma_00000000.wav_pl_3673.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/zh_jack_ma_00000000.wav/zh_jack_ma_00000000.wav_de_3710.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/zh_jack_ma_00000000.wav/zh_jack_ma_00000000.wav_tr_3768.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/zh_jack_ma_00000000.wav/zh_jack_ma_00000000.wav_en_3775.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/zh_jack_ma_00000000.wav/zh_jack_ma_00000000.wav_zh-cn_3780.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/zh_jack_ma_00000000.wav/zh_jack_ma_00000000.wav_ar_3781.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/zh_jack_ma_00000000.wav/zh_jack_ma_00000000.wav_fr_3789.wav
+Audio not deleted: audios_demo/FT/XTTS_no_FT/Audios/zh_jack_ma_00000000.wav/zh_jack_ma_00000000.wav_pt_3818.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/en_whisper_voice_00000015.wav/en_whisper_voice_00000015.wav_de_1070.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/en_whisper_voice_00000015.wav/en_whisper_voice_00000015.wav_nl_1095.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/en_whisper_voice_00000015.wav/en_whisper_voice_00000015.wav_ja_1106.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/en_whisper_voice_00000015.wav/en_whisper_voice_00000015.wav_fr_1117.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/en_whisper_voice_00000015.wav/en_whisper_voice_00000015.wav_en_1135.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/en_whisper_voice_00000015.wav/en_whisper_voice_00000015.wav_pt_1178.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/en_whisper_voice_00000015.wav/en_whisper_voice_00000015.wav_es_1212.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/en_whisper_voice_00000015.wav/en_whisper_voice_00000015.wav_ru_1235.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/en_whisper_voice_00000015.wav/en_whisper_voice_00000015.wav_tr_1240.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/en_whisper_voice_00000015.wav/en_whisper_voice_00000015.wav_zh-cn_1252.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/en_whisper_voice_00000015.wav/en_whisper_voice_00000015.wav_pl_1257.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/en_whisper_voice_00000015.wav/en_whisper_voice_00000015.wav_ko_1280.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/en_whisper_voice_00000015.wav/en_whisper_voice_00000015.wav_it_1291.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/en_whisper_voice_00000015.wav/en_whisper_voice_00000015.wav_ar_1301.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/en_whisper_voice_00000015.wav/en_whisper_voice_00000015.wav_cs_1302.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/en_whisper_voice_00000015.wav/en_whisper_voice_00000015.wav_hu_1329.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/fr_Jean_11_00000000.wav/fr_Jean_11_00000000.wav_hu_1425.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/fr_Jean_11_00000000.wav/fr_Jean_11_00000000.wav_nl_1431.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/fr_Jean_11_00000000.wav/fr_Jean_11_00000000.wav_zh-cn_1492.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/fr_Jean_11_00000000.wav/fr_Jean_11_00000000.wav_ar_1509.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/fr_Jean_11_00000000.wav/fr_Jean_11_00000000.wav_en_1535.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/fr_Jean_11_00000000.wav/fr_Jean_11_00000000.wav_ja_1554.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/fr_Jean_11_00000000.wav/fr_Jean_11_00000000.wav_ru_1587.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/fr_Jean_11_00000000.wav/fr_Jean_11_00000000.wav_de_1598.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/fr_Jean_11_00000000.wav/fr_Jean_11_00000000.wav_pt_1610.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/fr_Jean_11_00000000.wav/fr_Jean_11_00000000.wav_es_1644.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/fr_Jean_11_00000000.wav/fr_Jean_11_00000000.wav_pl_1657.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/fr_Jean_11_00000000.wav/fr_Jean_11_00000000.wav_it_1691.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/fr_Jean_11_00000000.wav/fr_Jean_11_00000000.wav_ko_1696.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/fr_Jean_11_00000000.wav/fr_Jean_11_00000000.wav_cs_1718.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/fr_Jean_11_00000000.wav/fr_Jean_11_00000000.wav_tr_1720.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/fr_Jean_11_00000000.wav/fr_Jean_11_00000000.wav_fr_1725.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/fr_julian_00000010.wav/fr_julian_00000010.wav_cs_1750.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/fr_julian_00000010.wav/fr_julian_00000010.wav_nl_1751.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/fr_julian_00000010.wav/fr_julian_00000010.wav_zh-cn_1764.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/fr_julian_00000010.wav/fr_julian_00000010.wav_de_1790.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/fr_julian_00000010.wav/fr_julian_00000010.wav_tr_1848.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/fr_julian_00000010.wav/fr_julian_00000010.wav_pl_1881.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/fr_julian_00000010.wav/fr_julian_00000010.wav_en_1887.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/fr_julian_00000010.wav/fr_julian_00000010.wav_ja_1906.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/fr_julian_00000010.wav/fr_julian_00000010.wav_ru_1923.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/fr_julian_00000010.wav/fr_julian_00000010.wav_ar_1925.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/fr_julian_00000010.wav/fr_julian_00000010.wav_hu_1953.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/fr_julian_00000010.wav/fr_julian_00000010.wav_fr_1997.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/fr_julian_00000010.wav/fr_julian_00000010.wav_pt_2026.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/fr_julian_00000010.wav/fr_julian_00000010.wav_ko_2048.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/fr_julian_00000010.wav/fr_julian_00000010.wav_it_2059.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/fr_julian_00000010.wav/fr_julian_00000010.wav_es_2092.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/fr_yan_lecun_00000080.wav/fr_yan_lecun_00000080.wav_fr_2109.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/fr_yan_lecun_00000080.wav/fr_yan_lecun_00000080.wav_ar_2133.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/fr_yan_lecun_00000080.wav/fr_yan_lecun_00000080.wav_ko_2160.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/fr_yan_lecun_00000080.wav/fr_yan_lecun_00000080.wav_hu_2161.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/fr_yan_lecun_00000080.wav/fr_yan_lecun_00000080.wav_pt_2250.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/fr_yan_lecun_00000080.wav/fr_yan_lecun_00000080.wav_ru_2259.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/fr_yan_lecun_00000080.wav/fr_yan_lecun_00000080.wav_zh-cn_2292.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/fr_yan_lecun_00000080.wav/fr_yan_lecun_00000080.wav_nl_2327.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/fr_yan_lecun_00000080.wav/fr_yan_lecun_00000080.wav_de_2334.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/fr_yan_lecun_00000080.wav/fr_yan_lecun_00000080.wav_it_2347.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/fr_yan_lecun_00000080.wav/fr_yan_lecun_00000080.wav_ja_2354.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/fr_yan_lecun_00000080.wav/fr_yan_lecun_00000080.wav_tr_2392.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/fr_yan_lecun_00000080.wav/fr_yan_lecun_00000080.wav_cs_2406.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/fr_yan_lecun_00000080.wav/fr_yan_lecun_00000080.wav_en_2415.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/fr_yan_lecun_00000080.wav/fr_yan_lecun_00000080.wav_pl_2425.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/fr_yan_lecun_00000080.wav/fr_yan_lecun_00000080.wav_es_2428.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/pt_bolsonaro_00000172.wav/pt_bolsonaro_00000172.wav_ar_2453.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/pt_bolsonaro_00000172.wav/pt_bolsonaro_00000172.wav_ja_2466.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/pt_bolsonaro_00000172.wav/pt_bolsonaro_00000172.wav_en_2495.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/pt_bolsonaro_00000172.wav/pt_bolsonaro_00000172.wav_tr_2520.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/pt_bolsonaro_00000172.wav/pt_bolsonaro_00000172.wav_ru_2531.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/pt_bolsonaro_00000172.wav/pt_bolsonaro_00000172.wav_hu_2545.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/pt_bolsonaro_00000172.wav/pt_bolsonaro_00000172.wav_es_2556.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/pt_bolsonaro_00000172.wav/pt_bolsonaro_00000172.wav_pt_2570.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/pt_bolsonaro_00000172.wav/pt_bolsonaro_00000172.wav_pl_2585.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/pt_bolsonaro_00000172.wav/pt_bolsonaro_00000172.wav_fr_2605.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/pt_bolsonaro_00000172.wav/pt_bolsonaro_00000172.wav_ko_2624.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/pt_bolsonaro_00000172.wav/pt_bolsonaro_00000172.wav_de_2638.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/pt_bolsonaro_00000172.wav/pt_bolsonaro_00000172.wav_zh-cn_2708.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/pt_bolsonaro_00000172.wav/pt_bolsonaro_00000172.wav_cs_2742.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/pt_bolsonaro_00000172.wav/pt_bolsonaro_00000172.wav_nl_2775.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/pt_bolsonaro_00000172.wav/pt_bolsonaro_00000172.wav_it_2779.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/pt_dilma_00000003.wav/pt_dilma_00000003.wav_ja_3122.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/pt_dilma_00000003.wav/pt_dilma_00000003.wav_ar_3093.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/pt_dilma_00000003.wav/pt_dilma_00000003.wav_tr_3096.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/pt_dilma_00000003.wav/pt_dilma_00000003.wav_pt_3082.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/pt_dilma_00000003.wav/pt_dilma_00000003.wav_es_2988.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/pt_dilma_00000003.wav/pt_dilma_00000003.wav_nl_2999.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/pt_dilma_00000003.wav/pt_dilma_00000003.wav_en_2927.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/pt_dilma_00000003.wav/pt_dilma_00000003.wav_cs_2902.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/pt_dilma_00000003.wav/pt_dilma_00000003.wav_fr_2813.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/pt_dilma_00000003.wav/pt_dilma_00000003.wav_hu_2833.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/pt_dilma_00000003.wav/pt_dilma_00000003.wav_it_2859.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/pt_dilma_00000003.wav/pt_dilma_00000003.wav_zh-cn_2868.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/pt_dilma_00000003.wav/pt_dilma_00000003.wav_ru_2963.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/pt_dilma_00000003.wav/pt_dilma_00000003.wav_ko_3024.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/pt_dilma_00000003.wav/pt_dilma_00000003.wav_pl_3033.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/pt_dilma_00000003.wav/pt_dilma_00000003.wav_de_3038.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/pt_lula_00000118.wav/pt_lula_00000118.wav_en_3151.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/pt_lula_00000118.wav/pt_lula_00000118.wav_nl_3207.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/pt_lula_00000118.wav/pt_lula_00000118.wav_it_3227.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/pt_lula_00000118.wav/pt_lula_00000118.wav_pl_3257.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/pt_lula_00000118.wav/pt_lula_00000118.wav_cs_3270.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/pt_lula_00000118.wav/pt_lula_00000118.wav_zh-cn_3348.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/pt_lula_00000118.wav/pt_lula_00000118.wav_pt_3354.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/pt_lula_00000118.wav/pt_lula_00000118.wav_es_3356.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/pt_lula_00000118.wav/pt_lula_00000118.wav_ru_3379.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/pt_lula_00000118.wav/pt_lula_00000118.wav_de_3406.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/pt_lula_00000118.wav/pt_lula_00000118.wav_fr_3437.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/pt_lula_00000118.wav/pt_lula_00000118.wav_ko_3440.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/pt_lula_00000118.wav/pt_lula_00000118.wav_hu_3441.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/pt_lula_00000118.wav/pt_lula_00000118.wav_ar_3445.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/pt_lula_00000118.wav/pt_lula_00000118.wav_tr_3448.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/pt_lula_00000118.wav/pt_lula_00000118.wav_ja_3458.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/zh_jack_ma_00000000.wav/zh_jack_ma_00000000.wav_ja_3490.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/zh_jack_ma_00000000.wav/zh_jack_ma_00000000.wav_ru_3491.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/zh_jack_ma_00000000.wav/zh_jack_ma_00000000.wav_hu_3521.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/zh_jack_ma_00000000.wav/zh_jack_ma_00000000.wav_es_3532.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/zh_jack_ma_00000000.wav/zh_jack_ma_00000000.wav_cs_3574.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/zh_jack_ma_00000000.wav/zh_jack_ma_00000000.wav_ko_3584.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/zh_jack_ma_00000000.wav/zh_jack_ma_00000000.wav_it_3627.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/zh_jack_ma_00000000.wav/zh_jack_ma_00000000.wav_nl_3671.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/zh_jack_ma_00000000.wav/zh_jack_ma_00000000.wav_pl_3673.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/zh_jack_ma_00000000.wav/zh_jack_ma_00000000.wav_de_3710.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/zh_jack_ma_00000000.wav/zh_jack_ma_00000000.wav_tr_3768.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/zh_jack_ma_00000000.wav/zh_jack_ma_00000000.wav_en_3775.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/zh_jack_ma_00000000.wav/zh_jack_ma_00000000.wav_zh-cn_3780.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/zh_jack_ma_00000000.wav/zh_jack_ma_00000000.wav_ar_3781.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/zh_jack_ma_00000000.wav/zh_jack_ma_00000000.wav_fr_3789.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/zh_jack_ma_00000000.wav/zh_jack_ma_00000000.wav_pt_3818.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/ar_george_00000000.wav/ar_george_00000000.wav_tr_24.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/ar_george_00000000.wav/ar_george_00000000.wav_nl_39.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/ar_george_00000000.wav/ar_george_00000000.wav_cs_102.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/ar_george_00000000.wav/ar_george_00000000.wav_en_127.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/ar_george_00000000.wav/ar_george_00000000.wav_ru_147.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/ar_george_00000000.wav/ar_george_00000000.wav_de_158.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/ar_george_00000000.wav/ar_george_00000000.wav_zh-cn_164.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/ar_george_00000000.wav/ar_george_00000000.wav_pt_186.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/ar_george_00000000.wav/ar_george_00000000.wav_it_203.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/ar_george_00000000.wav/ar_george_00000000.wav_fr_205.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/ar_george_00000000.wav/ar_george_00000000.wav_ar_213.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/ar_george_00000000.wav/ar_george_00000000.wav_pl_217.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/ar_george_00000000.wav/ar_george_00000000.wav_es_236.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/ar_george_00000000.wav/ar_george_00000000.wav_hu_241.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/ar_george_00000000.wav/ar_george_00000000.wav_ja_258.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/ar_george_00000000.wav/ar_george_00000000.wav_ko_304.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/en_miley_00000044_00000056.wav/en_miley_00000044_00000056.wav_pl_393.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/en_miley_00000044_00000056.wav/en_miley_00000044_00000056.wav_zh-cn_404.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/en_miley_00000044_00000056.wav/en_miley_00000044_00000056.wav_cs_406.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/en_miley_00000044_00000056.wav/en_miley_00000044_00000056.wav_hu_417.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/en_miley_00000044_00000056.wav/en_miley_00000044_00000056.wav_ru_451.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/en_miley_00000044_00000056.wav/en_miley_00000044_00000056.wav_ar_469.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/en_miley_00000044_00000056.wav/en_miley_00000044_00000056.wav_it_475.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/en_miley_00000044_00000056.wav/en_miley_00000044_00000056.wav_de_494.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/en_miley_00000044_00000056.wav/en_miley_00000044_00000056.wav_nl_519.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/en_miley_00000044_00000056.wav/en_miley_00000044_00000056.wav_en_591.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/en_miley_00000044_00000056.wav/en_miley_00000044_00000056.wav_ko_592.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/en_miley_00000044_00000056.wav/en_miley_00000044_00000056.wav_ja_594.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/en_miley_00000044_00000056.wav/en_miley_00000044_00000056.wav_es_620.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/en_miley_00000044_00000056.wav/en_miley_00000044_00000056.wav_pt_634.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/en_miley_00000044_00000056.wav/en_miley_00000044_00000056.wav_fr_637.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/en_miley_00000044_00000056.wav/en_miley_00000044_00000056.wav_tr_696.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/en_robo_coqui_000254180_000259700.wav/en_robo_coqui_000254180_000259700.wav_pt_698.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/en_robo_coqui_000254180_000259700.wav/en_robo_coqui_000254180_000259700.wav_ar_741.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/en_robo_coqui_000254180_000259700.wav/en_robo_coqui_000254180_000259700.wav_es_764.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/en_robo_coqui_000254180_000259700.wav/en_robo_coqui_000254180_000259700.wav_hu_785.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/en_robo_coqui_000254180_000259700.wav/en_robo_coqui_000254180_000259700.wav_ru_835.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/en_robo_coqui_000254180_000259700.wav/en_robo_coqui_000254180_000259700.wav_it_859.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/en_robo_coqui_000254180_000259700.wav/en_robo_coqui_000254180_000259700.wav_cs_902.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/en_robo_coqui_000254180_000259700.wav/en_robo_coqui_000254180_000259700.wav_de_910.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/en_robo_coqui_000254180_000259700.wav/en_robo_coqui_000254180_000259700.wav_pl_937.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/en_robo_coqui_000254180_000259700.wav/en_robo_coqui_000254180_000259700.wav_zh-cn_964.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/en_robo_coqui_000254180_000259700.wav/en_robo_coqui_000254180_000259700.wav_ko_992.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/en_robo_coqui_000254180_000259700.wav/en_robo_coqui_000254180_000259700.wav_ja_994.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/en_robo_coqui_000254180_000259700.wav/en_robo_coqui_000254180_000259700.wav_nl_999.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/en_robo_coqui_000254180_000259700.wav/en_robo_coqui_000254180_000259700.wav_tr_1016.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/en_robo_coqui_000254180_000259700.wav/en_robo_coqui_000254180_000259700.wav_en_1023.wav
+Audio not deleted: audios_demo/FT/XTTS_FT/Audios/en_robo_coqui_000254180_000259700.wav/en_robo_coqui_000254180_000259700.wav_fr_1037.wav
