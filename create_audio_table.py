@@ -36,22 +36,21 @@ def create_html_table(dic):
 
     
     df = pd.DataFrame.from_dict(dic, orient='columns')
-
+    # print(df)
     # df = pd.concat([pd.DataFrame.from_dict(aux_list, orient='columns'), df], ignore_index=True)
-
-
-
     # df = df.sort_values('Model Name')
     
     # html = df.pivot_table(values=['generated_wav'], index=["Model Name"], columns=['Speaker Name'], aggfunc='sum').to_html()
 
     html = df.pivot_table(values=['Samples'], index=["Codec"], columns=['Speaker Name'], aggfunc='sum').to_html()
 
-
     # added audio 
     html = html.replace("<td>audios_demo/", '<td><audio controls style="width: 110px;" src="audios_demo/')
-    html = html.replace(".wav</td>", '.wav"></audio></td>').replace("Speaker", "Speaker")
+    html = html.replace(".wav</td>", '.wav"></audio></td>')
+    for key in model_map:
+        html = html.replace(model_map[key], key)
 
+    html  = html.replace("@", "")
 
     print(html)
 
@@ -81,9 +80,18 @@ from glob import glob
 
 
 all_samples = glob(samples_path + '**/*.wav', recursive=True)
-
+all_samples.sort()
+model_map = {
+    "GT": "0 Ground truth",
+    "Encodec 6kbps": "1 Encodec 6kbps",
+    "DAC 7.75kbps": "2 DAC 7.75kbps",
+    "Spectral Codec": "3 Spectral Codec",
+    "Ours 2k codes": "4 Ours 2k codes",
+    "Ours 4k codes": "5 Ours 4k codes",
+}
 
 language_samples = {}
+count_daps = set()
 for sample in all_samples:
     if "/daps/" in sample:
         lang = "DAPS"
@@ -96,9 +104,15 @@ for sample in all_samples:
     model_name = os.path.basename(audio_path).split("_")[-1].replace(".wav", "").replace("-", " ").replace("SpectralCodec", "Spectral Codec")
     speaker_name = os.path.basename(audio_path).split("_")[0]
 
-    print(model_name, audio_path, speaker_name)
-    dic = {"Codec": model_name, "Samples": audio_path, "Speaker Name": speaker_name}
+    if "/daps/" in sample:
+        sample_base_name = "_".join(os.path.basename(audio_path).split("_")[:-1])
+        count_daps.add(sample_base_name)
 
+        speaker_name = speaker_name+" "+ ("@" * len(count_daps))
+        # print(speaker_name)
+    dic = {"Codec": model_map[model_name], "Samples": audio_path, "Speaker Name": speaker_name}
+
+    
     if lang not in language_samples:
         language_samples[lang] = [dic]
     else:

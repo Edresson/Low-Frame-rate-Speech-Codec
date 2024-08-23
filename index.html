@@ -4,7 +4,7 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8">
-    <title>XTTS</title>
+    <title>NeMo Speech Codec</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
@@ -17,9 +17,9 @@
         <div id="bg-header"></div>
         <canvas id="demo-canvas"></canvas>
         <div class="main-title">
-          <h1 class="project-name"><span><a href="index.html">XTTS</a></span></h1>
+          <h1 class="project-name"><span><a href="index.html">NeMo Speech Codec</a></span></h1>
           <!-- <h2 class="project-tagline">Sentence Boundary Detection using Deep Learning</h2> -->
-          <h2 class="project-tagline">a Massively Multilingual Zero-Shot Text-to-Speech Model</h2>
+          <h2 class="project-tagline">A low frame rate Neural Audio Codec designed for fast high-quality Speech LLM training and inference</h2>
           <!-- <a href="https://github.com/mtreviso/deepbond" class="btn">Ver no GitHub</a> -->
            <!-- <div class="dropdown">
              <!-- <a href="projeto.html" class="btn">O Projeto</a>
@@ -65,7 +65,7 @@
         <br>
         <div style="text-align: center;">
           <h2>NeMo Speech Codec: A low frame rate Neural Audio Codec designed for fast high-quality Speech LLM training and inference</h3>
-            <p> <b>Edresson Casanova, Boris Ginsburg, Shehzeen Hussain, Ante Jukić, Ryan Langman, Sang-gil Lee, Jason Li, Paarth Neekhara</b></p>
+            <p> <b>Edresson Casanova, Ryan Langman, Paarth Neekhara, Shehzeen Hussain, Jason Li,  \\ Ante Jukić, Sang-gil Lee, Boris Ginsburg</b></p>
         
 
         </div>
@@ -93,67 +93,14 @@
 
       <h2>Codec Reconstruction</h2>
 
-      <p> Note that for the audio demo all audios was resampled to 22.05kHz to fair comparison.  </p>
+      <p> Note that for the audio demo all audios was resampled to 22.05kHz to fair comparison.  </p>      
 
 
 
-      <p><b>DAPS test set</b></p>
-
-      <table border="1" class="dataframe">
-        <thead>
-          <tr>
-            <th></th>
-            <th colspan="2" halign="left">Samples</th>
-          </tr>
-          <tr>
-            <th>Speaker Name</th>
-            <th>f10</th>
-            <th>m10</th>
-          </tr>
-          <tr>
-            <th>Codec</th>
-            <th></th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th>DAC 7.75kbps</th>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/daps/f10_script3_cleanraw_00000020_DAC-7.75kbps.wavaudios_demo/codecs_reconstruction_22kHz/daps/f10_script3_cleanraw_00000012_DAC-7.75kbps.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/daps/m10_script1_cleanraw_00000005_DAC-7.75kbps.wavaudios_demo/codecs_reconstruction_22kHz/daps/m10_script2_cleanraw_00000023_DAC-7.75kbps.wavaudios_demo/codecs_reconstruction_22kHz/daps/m10_script5_cleanraw_00000009_DAC-7.75kbps.wavaudios_demo/codecs_reconstruction_22kHz/daps/m10_script3_cleanraw_00000025_DAC-7.75kbps.wav"></audio></td>
-          </tr>
-          <tr>
-            <th>Encodec 6kbps</th>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/daps/f10_script3_cleanraw_00000012_Encodec-6kbps.wavaudios_demo/codecs_reconstruction_22kHz/daps/f10_script3_cleanraw_00000020_Encodec-6kbps.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/daps/m10_script3_cleanraw_00000025_Encodec-6kbps.wavaudios_demo/codecs_reconstruction_22kHz/daps/m10_script5_cleanraw_00000009_Encodec-6kbps.wavaudios_demo/codecs_reconstruction_22kHz/daps/m10_script2_cleanraw_00000023_Encodec-6kbps.wavaudios_demo/codecs_reconstruction_22kHz/daps/m10_script1_cleanraw_00000005_Encodec-6kbps.wav"></audio></td>
-          </tr>
-          <tr>
-            <th>Ground truth</th>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/daps/f10_script3_cleanraw_00000020_GT.wavaudios_demo/codecs_reconstruction_22kHz/daps/f10_script3_cleanraw_00000012_GT.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/daps/m10_script3_cleanraw_00000025_GT.wavaudios_demo/codecs_reconstruction_22kHz/daps/m10_script1_cleanraw_00000005_GT.wavaudios_demo/codecs_reconstruction_22kHz/daps/m10_script2_cleanraw_00000023_GT.wavaudios_demo/codecs_reconstruction_22kHz/daps/m10_script5_cleanraw_00000009_GT.wav"></audio></td>
-          </tr>
-          <tr>
-            <th>Ours 2k codes</th>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/daps/f10_script3_cleanraw_00000020_Ours-2k-codes.wavaudios_demo/codecs_reconstruction_22kHz/daps/f10_script3_cleanraw_00000012_Ours-2k-codes.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/daps/m10_script3_cleanraw_00000025_Ours-2k-codes.wavaudios_demo/codecs_reconstruction_22kHz/daps/m10_script5_cleanraw_00000009_Ours-2k-codes.wavaudios_demo/codecs_reconstruction_22kHz/daps/m10_script1_cleanraw_00000005_Ours-2k-codes.wavaudios_demo/codecs_reconstruction_22kHz/daps/m10_script2_cleanraw_00000023_Ours-2k-codes.wav"></audio></td>
-          </tr>
-          <tr>
-            <th>Ours 4k codes</th>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/daps/f10_script3_cleanraw_00000012_Ours-4k-codes.wavaudios_demo/codecs_reconstruction_22kHz/daps/f10_script3_cleanraw_00000020_Ours-4k-codes.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/daps/m10_script3_cleanraw_00000025_Ours-4k-codes.wavaudios_demo/codecs_reconstruction_22kHz/daps/m10_script1_cleanraw_00000005_Ours-4k-codes.wavaudios_demo/codecs_reconstruction_22kHz/daps/m10_script2_cleanraw_00000023_Ours-4k-codes.wavaudios_demo/codecs_reconstruction_22kHz/daps/m10_script5_cleanraw_00000009_Ours-4k-codes.wav"></audio></td>
-          </tr>
-          <tr>
-            <th>Spectral Codec</th>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/daps/f10_script3_cleanraw_00000020_SpectralCodec.wavaudios_demo/codecs_reconstruction_22kHz/daps/f10_script3_cleanraw_00000012_SpectralCodec.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/daps/m10_script3_cleanraw_00000025_SpectralCodec.wavaudios_demo/codecs_reconstruction_22kHz/daps/m10_script1_cleanraw_00000005_SpectralCodec.wavaudios_demo/codecs_reconstruction_22kHz/daps/m10_script2_cleanraw_00000023_SpectralCodec.wavaudios_demo/codecs_reconstruction_22kHz/daps/m10_script5_cleanraw_00000009_SpectralCodec.wav"></audio></td>
-          </tr>
-        </tbody>
-      </table>
-      
-      
       <p><b>MLS test set</b></p>
 
-       <p><b>English samples</b></p>
+
+      <p><b>English samples</b></p>
       
       <table border="1" class="dataframe">
         <thead>
@@ -182,13 +129,13 @@
         </thead>
         <tbody>
           <tr>
-            <th>DAC 7.75kbps</th>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/en/10226_9841_old_friends_1608_librivox-oldfriends_08_lang_704.29_11.23_DAC-7.75kbps.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/en/10453_10308_poems_american_history_period_growth_1607_librivox-poemsperiodofgrowth_04_various_951.56_18.96_DAC-7.75kbps.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/en/10611_10308_poems_american_history_period_growth_1607_librivox-poemsperiodofgrowth_06_various_539.53_14.93_DAC-7.75kbps.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/en/10839_10213_deadmensshoes_1606_librivox-deadmenshoes_18_braddon_898.83_14.48_DAC-7.75kbps.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/en/12119_11765_americanbookofthedog_1902_librivox-americanbookofthedog_37_various_1377.73_16.23_DAC-7.75kbps.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/en/7788_7108_changeling_1212_librivox-changeling_4_middletonrowley_1284.57_12.15_DAC-7.75kbps.wav"></audio></td>
+            <th>GT</th>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/en/10226_9841_old_friends_1608_librivox-oldfriends_08_lang_704.29_11.23_GT.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/en/10453_10308_poems_american_history_period_growth_1607_librivox-poemsperiodofgrowth_04_various_951.56_18.96_GT.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/en/10611_10308_poems_american_history_period_growth_1607_librivox-poemsperiodofgrowth_06_various_539.53_14.93_GT.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/en/10839_10213_deadmensshoes_1606_librivox-deadmenshoes_18_braddon_898.83_14.48_GT.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/en/12119_11765_americanbookofthedog_1902_librivox-americanbookofthedog_37_various_1377.73_16.23_GT.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/en/7788_7108_changeling_1212_librivox-changeling_4_middletonrowley_1284.57_12.15_GT.wav"></audio></td>
           </tr>
           <tr>
             <th>Encodec 6kbps</th>
@@ -200,13 +147,22 @@
             <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/en/7788_7108_changeling_1212_librivox-changeling_4_middletonrowley_1284.57_12.15_Encodec-6kbps.wav"></audio></td>
           </tr>
           <tr>
-            <th>Ground truth</th>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/en/10226_9841_old_friends_1608_librivox-oldfriends_08_lang_704.29_11.23_GT.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/en/10453_10308_poems_american_history_period_growth_1607_librivox-poemsperiodofgrowth_04_various_951.56_18.96_GT.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/en/10611_10308_poems_american_history_period_growth_1607_librivox-poemsperiodofgrowth_06_various_539.53_14.93_GT.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/en/10839_10213_deadmensshoes_1606_librivox-deadmenshoes_18_braddon_898.83_14.48_GT.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/en/12119_11765_americanbookofthedog_1902_librivox-americanbookofthedog_37_various_1377.73_16.23_GT.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/en/7788_7108_changeling_1212_librivox-changeling_4_middletonrowley_1284.57_12.15_GT.wav"></audio></td>
+            <th>DAC 7.75kbps</th>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/en/10226_9841_old_friends_1608_librivox-oldfriends_08_lang_704.29_11.23_DAC-7.75kbps.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/en/10453_10308_poems_american_history_period_growth_1607_librivox-poemsperiodofgrowth_04_various_951.56_18.96_DAC-7.75kbps.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/en/10611_10308_poems_american_history_period_growth_1607_librivox-poemsperiodofgrowth_06_various_539.53_14.93_DAC-7.75kbps.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/en/10839_10213_deadmensshoes_1606_librivox-deadmenshoes_18_braddon_898.83_14.48_DAC-7.75kbps.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/en/12119_11765_americanbookofthedog_1902_librivox-americanbookofthedog_37_various_1377.73_16.23_DAC-7.75kbps.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/en/7788_7108_changeling_1212_librivox-changeling_4_middletonrowley_1284.57_12.15_DAC-7.75kbps.wav"></audio></td>
+          </tr>
+          <tr>
+            <th>Spectral Codec</th>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/en/10226_9841_old_friends_1608_librivox-oldfriends_08_lang_704.29_11.23_SpectralCodec.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/en/10453_10308_poems_american_history_period_growth_1607_librivox-poemsperiodofgrowth_04_various_951.56_18.96_SpectralCodec.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/en/10611_10308_poems_american_history_period_growth_1607_librivox-poemsperiodofgrowth_06_various_539.53_14.93_SpectralCodec.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/en/10839_10213_deadmensshoes_1606_librivox-deadmenshoes_18_braddon_898.83_14.48_SpectralCodec.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/en/12119_11765_americanbookofthedog_1902_librivox-americanbookofthedog_37_various_1377.73_16.23_SpectralCodec.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/en/7788_7108_changeling_1212_librivox-changeling_4_middletonrowley_1284.57_12.15_SpectralCodec.wav"></audio></td>
           </tr>
           <tr>
             <th>Ours 2k codes</th>
@@ -226,21 +182,274 @@
             <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/en/12119_11765_americanbookofthedog_1902_librivox-americanbookofthedog_37_various_1377.73_16.23_Ours-4k-codes.wav"></audio></td>
             <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/en/7788_7108_changeling_1212_librivox-changeling_4_middletonrowley_1284.57_12.15_Ours-4k-codes.wav"></audio></td>
           </tr>
+        </tbody>
+      </table>
+      
+      
+
+
+      <p><b>Portuguese samples</b></p>
+      
+      <table border="1" class="dataframe">
+        <thead>
+          <tr>
+            <th></th>
+            <th colspan="6" halign="left">Samples</th>
+          </tr>
+          <tr>
+            <th>Speaker Name</th>
+            <th>11247</th>
+            <th>12287</th>
+            <th>12626</th>
+            <th>12670</th>
+            <th>3050</th>
+            <th>4405</th>
+          </tr>
+          <tr>
+            <th>Codec</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>GT</th>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/11247_10229_000030-0001_None_6.68_GT.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/12287_12742_000058_None_14.41_GT.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/12626_10229_000083_None_11.070041666666668_GT.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/12670_13396_000037_None_12.45_GT.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/3050_2941_000067_None_14.62_GT.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/4405_3648_000011-0001_None_16.84_GT.wav"></audio></td>
+          </tr>
+          <tr>
+            <th>Encodec 6kbps</th>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/11247_10229_000030-0001_None_6.68_Encodec-6kbps.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/12287_12742_000058_None_14.41_Encodec-6kbps.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/12626_10229_000083_None_11.070041666666668_Encodec-6kbps.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/12670_13396_000037_None_12.45_Encodec-6kbps.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/3050_2941_000067_None_14.62_Encodec-6kbps.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/4405_3648_000011-0001_None_16.84_Encodec-6kbps.wav"></audio></td>
+          </tr>
+          <tr>
+            <th>DAC 7.75kbps</th>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/11247_10229_000030-0001_None_6.68_DAC-7.75kbps.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/12287_12742_000058_None_14.41_DAC-7.75kbps.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/12626_10229_000083_None_11.070041666666668_DAC-7.75kbps.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/12670_13396_000037_None_12.45_DAC-7.75kbps.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/3050_2941_000067_None_14.62_DAC-7.75kbps.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/4405_3648_000011-0001_None_16.84_DAC-7.75kbps.wav"></audio></td>
+          </tr>
           <tr>
             <th>Spectral Codec</th>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/en/10226_9841_old_friends_1608_librivox-oldfriends_08_lang_704.29_11.23_SpectralCodec.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/en/10453_10308_poems_american_history_period_growth_1607_librivox-poemsperiodofgrowth_04_various_951.56_18.96_SpectralCodec.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/en/10611_10308_poems_american_history_period_growth_1607_librivox-poemsperiodofgrowth_06_various_539.53_14.93_SpectralCodec.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/en/10839_10213_deadmensshoes_1606_librivox-deadmenshoes_18_braddon_898.83_14.48_SpectralCodec.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/en/12119_11765_americanbookofthedog_1902_librivox-americanbookofthedog_37_various_1377.73_16.23_SpectralCodec.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/en/7788_7108_changeling_1212_librivox-changeling_4_middletonrowley_1284.57_12.15_SpectralCodec.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/11247_10229_000030-0001_None_6.68_SpectralCodec.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/12287_12742_000058_None_14.41_SpectralCodec.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/12626_10229_000083_None_11.070041666666668_SpectralCodec.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/12670_13396_000037_None_12.45_SpectralCodec.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/3050_2941_000067_None_14.62_SpectralCodec.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/4405_3648_000011-0001_None_16.84_SpectralCodec.wav"></audio></td>
+          </tr>
+          <tr>
+            <th>Ours 2k codes</th>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/11247_10229_000030-0001_None_6.68_Ours-2k-codes.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/12287_12742_000058_None_14.41_Ours-2k-codes.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/12626_10229_000083_None_11.070041666666668_Ours-2k-codes.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/12670_13396_000037_None_12.45_Ours-2k-codes.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/3050_2941_000067_None_14.62_Ours-2k-codes.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/4405_3648_000011-0001_None_16.84_Ours-2k-codes.wav"></audio></td>
+          </tr>
+          <tr>
+            <th>Ours 4k codes</th>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/11247_10229_000030-0001_None_6.68_Ours-4k-codes.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/12287_12742_000058_None_14.41_Ours-4k-codes.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/12626_10229_000083_None_11.070041666666668_Ours-4k-codes.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/12670_13396_000037_None_12.45_Ours-4k-codes.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/3050_2941_000067_None_14.62_Ours-4k-codes.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/4405_3648_000011-0001_None_16.84_Ours-4k-codes.wav"></audio></td>
+          </tr>
+        </tbody>
+      </table>
+
+      
+      <p><b>Spanish samples</b></p>
+      
+      <table border="1" class="dataframe">
+        <thead>
+          <tr>
+            <th></th>
+            <th colspan="6" halign="left">Samples</th>
+          </tr>
+          <tr>
+            <th>Speaker Name</th>
+            <th>10667</th>
+            <th>3471</th>
+            <th>4096</th>
+            <th>5870</th>
+            <th>6306</th>
+            <th>7510</th>
+          </tr>
+          <tr>
+            <th>Codec</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>GT</th>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/10667_6706_000030_None_16.304761904761904_GT.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/3471_1378_000053_None_13.942902494331063_GT.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/4096_1378_000023-0002_None_13.670702947845806_GT.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/5870_4006_000050_None_12.146938775510204_GT.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/6306_4006_000001_None_13.42045351473923_GT.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/7510_7613_000044-0001_None_13.670748299319728_GT.wav"></audio></td>
+          </tr>
+          <tr>
+            <th>Encodec 6kbps</th>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/10667_6706_000030_None_16.304761904761904_Encodec-6kbps.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/3471_1378_000053_None_13.942902494331063_Encodec-6kbps.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/4096_1378_000023-0002_None_13.670702947845806_Encodec-6kbps.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/5870_4006_000050_None_12.146938775510204_Encodec-6kbps.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/6306_4006_000001_None_13.42045351473923_Encodec-6kbps.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/7510_7613_000044-0001_None_13.670748299319728_Encodec-6kbps.wav"></audio></td>
+          </tr>
+          <tr>
+            <th>DAC 7.75kbps</th>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/10667_6706_000030_None_16.304761904761904_DAC-7.75kbps.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/3471_1378_000053_None_13.942902494331063_DAC-7.75kbps.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/4096_1378_000023-0002_None_13.670702947845806_DAC-7.75kbps.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/5870_4006_000050_None_12.146938775510204_DAC-7.75kbps.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/6306_4006_000001_None_13.42045351473923_DAC-7.75kbps.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/7510_7613_000044-0001_None_13.670748299319728_DAC-7.75kbps.wav"></audio></td>
+          </tr>
+          <tr>
+            <th>Spectral Codec</th>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/10667_6706_000030_None_16.304761904761904_SpectralCodec.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/3471_1378_000053_None_13.942902494331063_SpectralCodec.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/4096_1378_000023-0002_None_13.670702947845806_SpectralCodec.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/5870_4006_000050_None_12.146938775510204_SpectralCodec.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/6306_4006_000001_None_13.42045351473923_SpectralCodec.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/7510_7613_000044-0001_None_13.670748299319728_SpectralCodec.wav"></audio></td>
+          </tr>
+          <tr>
+            <th>Ours 2k codes</th>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/10667_6706_000030_None_16.304761904761904_Ours-2k-codes.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/3471_1378_000053_None_13.942902494331063_Ours-2k-codes.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/4096_1378_000023-0002_None_13.670702947845806_Ours-2k-codes.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/5870_4006_000050_None_12.146938775510204_Ours-2k-codes.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/6306_4006_000001_None_13.42045351473923_Ours-2k-codes.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/7510_7613_000044-0001_None_13.670748299319728_Ours-2k-codes.wav"></audio></td>
+          </tr>
+          <tr>
+            <th>Ours 4k codes</th>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/10667_6706_000030_None_16.304761904761904_Ours-4k-codes.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/3471_1378_000053_None_13.942902494331063_Ours-4k-codes.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/4096_1378_000023-0002_None_13.670702947845806_Ours-4k-codes.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/5870_4006_000050_None_12.146938775510204_Ours-4k-codes.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/6306_4006_000001_None_13.42045351473923_Ours-4k-codes.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/7510_7613_000044-0001_None_13.670748299319728_Ours-4k-codes.wav"></audio></td>
           </tr>
         </tbody>
       </table>
       
       
-       <p><b>Dutch samples</b></p>
+
+    
+       <p><b>French samples</b></p>
       
+      <table border="1" class="dataframe">
+        <thead>
+          <tr>
+            <th></th>
+            <th colspan="6" halign="left">Samples</th>
+          </tr>
+          <tr>
+            <th>Speaker Name</th>
+            <th>2154</th>
+            <th>2216</th>
+            <th>2465</th>
+            <th>4482</th>
+            <th>5207</th>
+            <th>5476</th>
+          </tr>
+          <tr>
+            <th>Codec</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>GT</th>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/2154_1167_000020-0001_None_10.666666666666666_GT.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/2216_1259_000083_None_11.71156462585034_GT.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/2465_1943_000007-0002_None_13.714285714285714_GT.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/4482_3103_000027-0001_None_4.266666666666667_GT.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/5207_3078_000003-0003_None_5.093877551020408_GT.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/5476_3103_000035-0001_None_4.092517006802721_GT.wav"></audio></td>
+          </tr>
+          <tr>
+            <th>Encodec 6kbps</th>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/2154_1167_000020-0001_None_10.666666666666666_Encodec-6kbps.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/2216_1259_000083_None_11.71156462585034_Encodec-6kbps.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/2465_1943_000007-0002_None_13.714285714285714_Encodec-6kbps.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/4482_3103_000027-0001_None_4.266666666666667_Encodec-6kbps.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/5207_3078_000003-0003_None_5.093877551020408_Encodec-6kbps.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/5476_3103_000035-0001_None_4.092517006802721_Encodec-6kbps.wav"></audio></td>
+          </tr>
+          <tr>
+            <th>DAC 7.75kbps</th>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/2154_1167_000020-0001_None_10.666666666666666_DAC-7.75kbps.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/2216_1259_000083_None_11.71156462585034_DAC-7.75kbps.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/2465_1943_000007-0002_None_13.714285714285714_DAC-7.75kbps.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/4482_3103_000027-0001_None_4.266666666666667_DAC-7.75kbps.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/5207_3078_000003-0003_None_5.093877551020408_DAC-7.75kbps.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/5476_3103_000035-0001_None_4.092517006802721_DAC-7.75kbps.wav"></audio></td>
+          </tr>
+          <tr>
+            <th>Spectral Codec</th>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/2154_1167_000020-0001_None_10.666666666666666_SpectralCodec.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/2216_1259_000083_None_11.71156462585034_SpectralCodec.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/2465_1943_000007-0002_None_13.714285714285714_SpectralCodec.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/4482_3103_000027-0001_None_4.266666666666667_SpectralCodec.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/5207_3078_000003-0003_None_5.093877551020408_SpectralCodec.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/5476_3103_000035-0001_None_4.092517006802721_SpectralCodec.wav"></audio></td>
+          </tr>
+          <tr>
+            <th>Ours 2k codes</th>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/2154_1167_000020-0001_None_10.666666666666666_Ours-2k-codes.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/2216_1259_000083_None_11.71156462585034_Ours-2k-codes.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/2465_1943_000007-0002_None_13.714285714285714_Ours-2k-codes.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/4482_3103_000027-0001_None_4.266666666666667_Ours-2k-codes.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/5207_3078_000003-0003_None_5.093877551020408_Ours-2k-codes.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/5476_3103_000035-0001_None_4.092517006802721_Ours-2k-codes.wav"></audio></td>
+          </tr>
+          <tr>
+            <th>Ours 4k codes</th>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/2154_1167_000020-0001_None_10.666666666666666_Ours-4k-codes.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/2216_1259_000083_None_11.71156462585034_Ours-4k-codes.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/2465_1943_000007-0002_None_13.714285714285714_Ours-4k-codes.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/4482_3103_000027-0001_None_4.266666666666667_Ours-4k-codes.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/5207_3078_000003-0003_None_5.093877551020408_Ours-4k-codes.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/5476_3103_000035-0001_None_4.092517006802721_Ours-4k-codes.wav"></audio></td>
+          </tr>
+        </tbody>
+      </table>
+      
+
+      <p><b>Dutch samples</b></p>
+
       <table border="1" class="dataframe">
         <thead>
           <tr>
@@ -268,13 +477,13 @@
         </thead>
         <tbody>
           <tr>
-            <th>DAC 7.75kbps</th>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/du/11290_9412_000093-0002_None_11.97278911564626_DAC-7.75kbps.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/du/3034_2211_000186_None_11.733333333333333_DAC-7.75kbps.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/du/3798_2211_000141-0003_None_6.965986394557823_DAC-7.75kbps.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/du/4396_4370_000088_None_13.69251700680272_DAC-7.75kbps.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/du/4429_3991_000756-0001_None_17.37142857142857_DAC-7.75kbps.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/du/880_795_000085-0003_None_8.054421768707483_DAC-7.75kbps.wav"></audio></td>
+            <th>GT</th>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/du/11290_9412_000093-0002_None_11.97278911564626_GT.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/du/3034_2211_000186_None_11.733333333333333_GT.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/du/3798_2211_000141-0003_None_6.965986394557823_GT.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/du/4396_4370_000088_None_13.69251700680272_GT.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/du/4429_3991_000756-0001_None_17.37142857142857_GT.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/du/880_795_000085-0003_None_8.054421768707483_GT.wav"></audio></td>
           </tr>
           <tr>
             <th>Encodec 6kbps</th>
@@ -286,13 +495,22 @@
             <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/du/880_795_000085-0003_None_8.054421768707483_Encodec-6kbps.wav"></audio></td>
           </tr>
           <tr>
-            <th>Ground truth</th>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/du/11290_9412_000093-0002_None_11.97278911564626_GT.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/du/3034_2211_000186_None_11.733333333333333_GT.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/du/3798_2211_000141-0003_None_6.965986394557823_GT.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/du/4396_4370_000088_None_13.69251700680272_GT.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/du/4429_3991_000756-0001_None_17.37142857142857_GT.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/du/880_795_000085-0003_None_8.054421768707483_GT.wav"></audio></td>
+            <th>DAC 7.75kbps</th>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/du/11290_9412_000093-0002_None_11.97278911564626_DAC-7.75kbps.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/du/3034_2211_000186_None_11.733333333333333_DAC-7.75kbps.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/du/3798_2211_000141-0003_None_6.965986394557823_DAC-7.75kbps.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/du/4396_4370_000088_None_13.69251700680272_DAC-7.75kbps.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/du/4429_3991_000756-0001_None_17.37142857142857_DAC-7.75kbps.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/du/880_795_000085-0003_None_8.054421768707483_DAC-7.75kbps.wav"></audio></td>
+          </tr>
+          <tr>
+            <th>Spectral Codec</th>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/du/11290_9412_000093-0002_None_11.97278911564626_SpectralCodec.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/du/3034_2211_000186_None_11.733333333333333_SpectralCodec.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/du/3798_2211_000141-0003_None_6.965986394557823_SpectralCodec.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/du/4396_4370_000088_None_13.69251700680272_SpectralCodec.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/du/4429_3991_000756-0001_None_17.37142857142857_SpectralCodec.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/du/880_795_000085-0003_None_8.054421768707483_SpectralCodec.wav"></audio></td>
           </tr>
           <tr>
             <th>Ours 2k codes</th>
@@ -312,17 +530,9 @@
             <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/du/4429_3991_000756-0001_None_17.37142857142857_Ours-4k-codes.wav"></audio></td>
             <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/du/880_795_000085-0003_None_8.054421768707483_Ours-4k-codes.wav"></audio></td>
           </tr>
-          <tr>
-            <th>Spectral Codec</th>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/du/11290_9412_000093-0002_None_11.97278911564626_SpectralCodec.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/du/3034_2211_000186_None_11.733333333333333_SpectralCodec.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/du/3798_2211_000141-0003_None_6.965986394557823_SpectralCodec.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/du/4396_4370_000088_None_13.69251700680272_SpectralCodec.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/du/4429_3991_000756-0001_None_17.37142857142857_SpectralCodec.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/du/880_795_000085-0003_None_8.054421768707483_SpectralCodec.wav"></audio></td>
-          </tr>
         </tbody>
       </table>
+      
       
       
        <p><b>German samples</b></p>
@@ -354,13 +564,13 @@
         </thead>
         <tbody>
           <tr>
-            <th>DAC 7.75kbps</th>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/ge/1660_869_000051-0003_None_2.0027210884353743_DAC-7.75kbps.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/ge/2252_1599_000027-0001_None_2.4816326530612245_DAC-7.75kbps.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/ge/3363_2124_000041-0003_None_4.397278911564626_DAC-7.75kbps.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/ge/7120_5144_000032_None_12.081632653061224_DAC-7.75kbps.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/ge/7456_6660_000070-0002_None_2.829931972789116_DAC-7.75kbps.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/ge/9494_8747_000059-0001_None_7.227210884353742_DAC-7.75kbps.wav"></audio></td>
+            <th>GT</th>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/ge/1660_869_000051-0003_None_2.0027210884353743_GT.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/ge/2252_1599_000027-0001_None_2.4816326530612245_GT.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/ge/3363_2124_000041-0003_None_4.397278911564626_GT.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/ge/7120_5144_000032_None_12.081632653061224_GT.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/ge/7456_6660_000070-0002_None_2.829931972789116_GT.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/ge/9494_8747_000059-0001_None_7.227210884353742_GT.wav"></audio></td>
           </tr>
           <tr>
             <th>Encodec 6kbps</th>
@@ -372,13 +582,22 @@
             <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/ge/9494_8747_000059-0001_None_7.227210884353742_Encodec-6kbps.wav"></audio></td>
           </tr>
           <tr>
-            <th>Ground truth</th>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/ge/1660_869_000051-0003_None_2.0027210884353743_GT.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/ge/2252_1599_000027-0001_None_2.4816326530612245_GT.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/ge/3363_2124_000041-0003_None_4.397278911564626_GT.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/ge/7120_5144_000032_None_12.081632653061224_GT.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/ge/7456_6660_000070-0002_None_2.829931972789116_GT.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/ge/9494_8747_000059-0001_None_7.227210884353742_GT.wav"></audio></td>
+            <th>DAC 7.75kbps</th>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/ge/1660_869_000051-0003_None_2.0027210884353743_DAC-7.75kbps.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/ge/2252_1599_000027-0001_None_2.4816326530612245_DAC-7.75kbps.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/ge/3363_2124_000041-0003_None_4.397278911564626_DAC-7.75kbps.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/ge/7120_5144_000032_None_12.081632653061224_DAC-7.75kbps.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/ge/7456_6660_000070-0002_None_2.829931972789116_DAC-7.75kbps.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/ge/9494_8747_000059-0001_None_7.227210884353742_DAC-7.75kbps.wav"></audio></td>
+          </tr>
+          <tr>
+            <th>Spectral Codec</th>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/ge/1660_869_000051-0003_None_2.0027210884353743_SpectralCodec.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/ge/2252_1599_000027-0001_None_2.4816326530612245_SpectralCodec.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/ge/3363_2124_000041-0003_None_4.397278911564626_SpectralCodec.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/ge/7120_5144_000032_None_12.081632653061224_SpectralCodec.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/ge/7456_6660_000070-0002_None_2.829931972789116_SpectralCodec.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/ge/9494_8747_000059-0001_None_7.227210884353742_SpectralCodec.wav"></audio></td>
           </tr>
           <tr>
             <th>Ours 2k codes</th>
@@ -397,335 +616,6 @@
             <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/ge/7120_5144_000032_None_12.081632653061224_Ours-4k-codes.wav"></audio></td>
             <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/ge/7456_6660_000070-0002_None_2.829931972789116_Ours-4k-codes.wav"></audio></td>
             <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/ge/9494_8747_000059-0001_None_7.227210884353742_Ours-4k-codes.wav"></audio></td>
-          </tr>
-          <tr>
-            <th>Spectral Codec</th>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/ge/1660_869_000051-0003_None_2.0027210884353743_SpectralCodec.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/ge/2252_1599_000027-0001_None_2.4816326530612245_SpectralCodec.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/ge/3363_2124_000041-0003_None_4.397278911564626_SpectralCodec.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/ge/7120_5144_000032_None_12.081632653061224_SpectralCodec.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/ge/7456_6660_000070-0002_None_2.829931972789116_SpectralCodec.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/ge/9494_8747_000059-0001_None_7.227210884353742_SpectralCodec.wav"></audio></td>
-          </tr>
-        </tbody>
-      </table>
-      
-      
-       <p><b>Spanish samples</b></p>
-      
-      <table border="1" class="dataframe">
-        <thead>
-          <tr>
-            <th></th>
-            <th colspan="6" halign="left">Samples</th>
-          </tr>
-          <tr>
-            <th>Speaker Name</th>
-            <th>10667</th>
-            <th>3471</th>
-            <th>4096</th>
-            <th>5870</th>
-            <th>6306</th>
-            <th>7510</th>
-          </tr>
-          <tr>
-            <th>Codec</th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th>DAC 7.75kbps</th>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/10667_6706_000030_None_16.304761904761904_DAC-7.75kbps.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/3471_1378_000053_None_13.942902494331063_DAC-7.75kbps.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/4096_1378_000023-0002_None_13.670702947845806_DAC-7.75kbps.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/5870_4006_000050_None_12.146938775510204_DAC-7.75kbps.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/6306_4006_000001_None_13.42045351473923_DAC-7.75kbps.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/7510_7613_000044-0001_None_13.670748299319728_DAC-7.75kbps.wav"></audio></td>
-          </tr>
-          <tr>
-            <th>Encodec 6kbps</th>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/10667_6706_000030_None_16.304761904761904_Encodec-6kbps.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/3471_1378_000053_None_13.942902494331063_Encodec-6kbps.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/4096_1378_000023-0002_None_13.670702947845806_Encodec-6kbps.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/5870_4006_000050_None_12.146938775510204_Encodec-6kbps.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/6306_4006_000001_None_13.42045351473923_Encodec-6kbps.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/7510_7613_000044-0001_None_13.670748299319728_Encodec-6kbps.wav"></audio></td>
-          </tr>
-          <tr>
-            <th>Ground truth</th>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/10667_6706_000030_None_16.304761904761904_GT.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/3471_1378_000053_None_13.942902494331063_GT.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/4096_1378_000023-0002_None_13.670702947845806_GT.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/5870_4006_000050_None_12.146938775510204_GT.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/6306_4006_000001_None_13.42045351473923_GT.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/7510_7613_000044-0001_None_13.670748299319728_GT.wav"></audio></td>
-          </tr>
-          <tr>
-            <th>Ours 2k codes</th>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/10667_6706_000030_None_16.304761904761904_Ours-2k-codes.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/3471_1378_000053_None_13.942902494331063_Ours-2k-codes.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/4096_1378_000023-0002_None_13.670702947845806_Ours-2k-codes.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/5870_4006_000050_None_12.146938775510204_Ours-2k-codes.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/6306_4006_000001_None_13.42045351473923_Ours-2k-codes.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/7510_7613_000044-0001_None_13.670748299319728_Ours-2k-codes.wav"></audio></td>
-          </tr>
-          <tr>
-            <th>Ours 4k codes</th>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/10667_6706_000030_None_16.304761904761904_Ours-4k-codes.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/3471_1378_000053_None_13.942902494331063_Ours-4k-codes.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/4096_1378_000023-0002_None_13.670702947845806_Ours-4k-codes.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/5870_4006_000050_None_12.146938775510204_Ours-4k-codes.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/6306_4006_000001_None_13.42045351473923_Ours-4k-codes.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/7510_7613_000044-0001_None_13.670748299319728_Ours-4k-codes.wav"></audio></td>
-          </tr>
-          <tr>
-            <th>Spectral Codec</th>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/10667_6706_000030_None_16.304761904761904_SpectralCodec.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/3471_1378_000053_None_13.942902494331063_SpectralCodec.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/4096_1378_000023-0002_None_13.670702947845806_SpectralCodec.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/5870_4006_000050_None_12.146938775510204_SpectralCodec.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/6306_4006_000001_None_13.42045351473923_SpectralCodec.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/sp/7510_7613_000044-0001_None_13.670748299319728_SpectralCodec.wav"></audio></td>
-          </tr>
-        </tbody>
-      </table>
-      
-      
-       <p><b>Polish samples</b></p>
-      
-      <table border="1" class="dataframe">
-        <thead>
-          <tr>
-            <th></th>
-            <th colspan="3" halign="left">Samples</th>
-          </tr>
-          <tr>
-            <th>Speaker Name</th>
-            <th>8758</th>
-            <th>9098</th>
-            <th>9860</th>
-          </tr>
-          <tr>
-            <th>Codec</th>
-            <th></th>
-            <th></th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th>DAC 7.75kbps</th>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pl/8758_8338_000057-0001_None_3.700680272108844_DAC-7.75kbps.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pl/9098_8338_000089-0001_None_9.839455782312925_DAC-7.75kbps.wavaudios_demo/codecs_reconstruction_22kHz/cml/pl/9098_8338_000061-0001_None_12.582312925170068_DAC-7.75kbps.wavaudios_demo/codecs_reconstruction_22kHz/cml/pl/9098_8338_000100-0002_None_3.570068027210884_DAC-7.75kbps.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pl/9860_8338_000008-0001_None_10.971428571428572_DAC-7.75kbps.wavaudios_demo/codecs_reconstruction_22kHz/cml/pl/9860_8338_000063-0003_None_11.450340136054422_DAC-7.75kbps.wav"></audio></td>
-          </tr>
-          <tr>
-            <th>Encodec 6kbps</th>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pl/8758_8338_000057-0001_None_3.700680272108844_Encodec-6kbps.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pl/9098_8338_000061-0001_None_12.582312925170068_Encodec-6kbps.wavaudios_demo/codecs_reconstruction_22kHz/cml/pl/9098_8338_000100-0002_None_3.570068027210884_Encodec-6kbps.wavaudios_demo/codecs_reconstruction_22kHz/cml/pl/9098_8338_000089-0001_None_9.839455782312925_Encodec-6kbps.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pl/9860_8338_000063-0003_None_11.450340136054422_Encodec-6kbps.wavaudios_demo/codecs_reconstruction_22kHz/cml/pl/9860_8338_000008-0001_None_10.971428571428572_Encodec-6kbps.wav"></audio></td>
-          </tr>
-          <tr>
-            <th>Ground truth</th>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pl/8758_8338_000057-0001_None_3.700680272108844_GT.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pl/9098_8338_000089-0001_None_9.839455782312925_GT.wavaudios_demo/codecs_reconstruction_22kHz/cml/pl/9098_8338_000061-0001_None_12.582312925170068_GT.wavaudios_demo/codecs_reconstruction_22kHz/cml/pl/9098_8338_000100-0002_None_3.570068027210884_GT.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pl/9860_8338_000063-0003_None_11.450340136054422_GT.wavaudios_demo/codecs_reconstruction_22kHz/cml/pl/9860_8338_000008-0001_None_10.971428571428572_GT.wav"></audio></td>
-          </tr>
-          <tr>
-            <th>Ours 2k codes</th>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pl/8758_8338_000057-0001_None_3.700680272108844_Ours-2k-codes.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pl/9098_8338_000100-0002_None_3.570068027210884_Ours-2k-codes.wavaudios_demo/codecs_reconstruction_22kHz/cml/pl/9098_8338_000089-0001_None_9.839455782312925_Ours-2k-codes.wavaudios_demo/codecs_reconstruction_22kHz/cml/pl/9098_8338_000061-0001_None_12.582312925170068_Ours-2k-codes.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pl/9860_8338_000008-0001_None_10.971428571428572_Ours-2k-codes.wavaudios_demo/codecs_reconstruction_22kHz/cml/pl/9860_8338_000063-0003_None_11.450340136054422_Ours-2k-codes.wav"></audio></td>
-          </tr>
-          <tr>
-            <th>Ours 4k codes</th>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pl/8758_8338_000057-0001_None_3.700680272108844_Ours-4k-codes.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pl/9098_8338_000089-0001_None_9.839455782312925_Ours-4k-codes.wavaudios_demo/codecs_reconstruction_22kHz/cml/pl/9098_8338_000061-0001_None_12.582312925170068_Ours-4k-codes.wavaudios_demo/codecs_reconstruction_22kHz/cml/pl/9098_8338_000100-0002_None_3.570068027210884_Ours-4k-codes.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pl/9860_8338_000063-0003_None_11.450340136054422_Ours-4k-codes.wavaudios_demo/codecs_reconstruction_22kHz/cml/pl/9860_8338_000008-0001_None_10.971428571428572_Ours-4k-codes.wav"></audio></td>
-          </tr>
-          <tr>
-            <th>Spectral Codec</th>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pl/8758_8338_000057-0001_None_3.700680272108844_SpectralCodec.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pl/9098_8338_000089-0001_None_9.839455782312925_SpectralCodec.wavaudios_demo/codecs_reconstruction_22kHz/cml/pl/9098_8338_000100-0002_None_3.570068027210884_SpectralCodec.wavaudios_demo/codecs_reconstruction_22kHz/cml/pl/9098_8338_000061-0001_None_12.582312925170068_SpectralCodec.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pl/9860_8338_000063-0003_None_11.450340136054422_SpectralCodec.wavaudios_demo/codecs_reconstruction_22kHz/cml/pl/9860_8338_000008-0001_None_10.971428571428572_SpectralCodec.wav"></audio></td>
-          </tr>
-        </tbody>
-      </table>
-      
-      
-       <p><b>Portuguese samples</b></p>
-      
-      <table border="1" class="dataframe">
-        <thead>
-          <tr>
-            <th></th>
-            <th colspan="6" halign="left">Samples</th>
-          </tr>
-          <tr>
-            <th>Speaker Name</th>
-            <th>11247</th>
-            <th>12287</th>
-            <th>12626</th>
-            <th>12670</th>
-            <th>3050</th>
-            <th>4405</th>
-          </tr>
-          <tr>
-            <th>Codec</th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th>DAC 7.75kbps</th>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/11247_10229_000030-0001_None_6.68_DAC-7.75kbps.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/12287_12742_000058_None_14.41_DAC-7.75kbps.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/12626_10229_000083_None_11.070041666666668_DAC-7.75kbps.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/12670_13396_000037_None_12.45_DAC-7.75kbps.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/3050_2941_000067_None_14.62_DAC-7.75kbps.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/4405_3648_000011-0001_None_16.84_DAC-7.75kbps.wav"></audio></td>
-          </tr>
-          <tr>
-            <th>Encodec 6kbps</th>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/11247_10229_000030-0001_None_6.68_Encodec-6kbps.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/12287_12742_000058_None_14.41_Encodec-6kbps.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/12626_10229_000083_None_11.070041666666668_Encodec-6kbps.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/12670_13396_000037_None_12.45_Encodec-6kbps.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/3050_2941_000067_None_14.62_Encodec-6kbps.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/4405_3648_000011-0001_None_16.84_Encodec-6kbps.wav"></audio></td>
-          </tr>
-          <tr>
-            <th>Ground truth</th>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/11247_10229_000030-0001_None_6.68_GT.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/12287_12742_000058_None_14.41_GT.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/12626_10229_000083_None_11.070041666666668_GT.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/12670_13396_000037_None_12.45_GT.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/3050_2941_000067_None_14.62_GT.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/4405_3648_000011-0001_None_16.84_GT.wav"></audio></td>
-          </tr>
-          <tr>
-            <th>Ours 2k codes</th>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/11247_10229_000030-0001_None_6.68_Ours-2k-codes.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/12287_12742_000058_None_14.41_Ours-2k-codes.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/12626_10229_000083_None_11.070041666666668_Ours-2k-codes.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/12670_13396_000037_None_12.45_Ours-2k-codes.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/3050_2941_000067_None_14.62_Ours-2k-codes.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/4405_3648_000011-0001_None_16.84_Ours-2k-codes.wav"></audio></td>
-          </tr>
-          <tr>
-            <th>Ours 4k codes</th>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/11247_10229_000030-0001_None_6.68_Ours-4k-codes.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/12287_12742_000058_None_14.41_Ours-4k-codes.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/12626_10229_000083_None_11.070041666666668_Ours-4k-codes.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/12670_13396_000037_None_12.45_Ours-4k-codes.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/3050_2941_000067_None_14.62_Ours-4k-codes.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/4405_3648_000011-0001_None_16.84_Ours-4k-codes.wav"></audio></td>
-          </tr>
-          <tr>
-            <th>Spectral Codec</th>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/11247_10229_000030-0001_None_6.68_SpectralCodec.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/12287_12742_000058_None_14.41_SpectralCodec.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/12626_10229_000083_None_11.070041666666668_SpectralCodec.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/12670_13396_000037_None_12.45_SpectralCodec.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/3050_2941_000067_None_14.62_SpectralCodec.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pt/4405_3648_000011-0001_None_16.84_SpectralCodec.wav"></audio></td>
-          </tr>
-        </tbody>
-      </table>
-      
-      
-       <p><b>French samples</b></p>
-      
-      <table border="1" class="dataframe">
-        <thead>
-          <tr>
-            <th></th>
-            <th colspan="6" halign="left">Samples</th>
-          </tr>
-          <tr>
-            <th>Speaker Name</th>
-            <th>2154</th>
-            <th>2216</th>
-            <th>2465</th>
-            <th>4482</th>
-            <th>5207</th>
-            <th>5476</th>
-          </tr>
-          <tr>
-            <th>Codec</th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th>DAC 7.75kbps</th>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/2154_1167_000020-0001_None_10.666666666666666_DAC-7.75kbps.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/2216_1259_000083_None_11.71156462585034_DAC-7.75kbps.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/2465_1943_000007-0002_None_13.714285714285714_DAC-7.75kbps.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/4482_3103_000027-0001_None_4.266666666666667_DAC-7.75kbps.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/5207_3078_000003-0003_None_5.093877551020408_DAC-7.75kbps.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/5476_3103_000035-0001_None_4.092517006802721_DAC-7.75kbps.wav"></audio></td>
-          </tr>
-          <tr>
-            <th>Encodec 6kbps</th>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/2154_1167_000020-0001_None_10.666666666666666_Encodec-6kbps.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/2216_1259_000083_None_11.71156462585034_Encodec-6kbps.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/2465_1943_000007-0002_None_13.714285714285714_Encodec-6kbps.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/4482_3103_000027-0001_None_4.266666666666667_Encodec-6kbps.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/5207_3078_000003-0003_None_5.093877551020408_Encodec-6kbps.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/5476_3103_000035-0001_None_4.092517006802721_Encodec-6kbps.wav"></audio></td>
-          </tr>
-          <tr>
-            <th>Ground truth</th>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/2154_1167_000020-0001_None_10.666666666666666_GT.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/2216_1259_000083_None_11.71156462585034_GT.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/2465_1943_000007-0002_None_13.714285714285714_GT.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/4482_3103_000027-0001_None_4.266666666666667_GT.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/5207_3078_000003-0003_None_5.093877551020408_GT.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/5476_3103_000035-0001_None_4.092517006802721_GT.wav"></audio></td>
-          </tr>
-          <tr>
-            <th>Ours 2k codes</th>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/2154_1167_000020-0001_None_10.666666666666666_Ours-2k-codes.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/2216_1259_000083_None_11.71156462585034_Ours-2k-codes.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/2465_1943_000007-0002_None_13.714285714285714_Ours-2k-codes.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/4482_3103_000027-0001_None_4.266666666666667_Ours-2k-codes.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/5207_3078_000003-0003_None_5.093877551020408_Ours-2k-codes.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/5476_3103_000035-0001_None_4.092517006802721_Ours-2k-codes.wav"></audio></td>
-          </tr>
-          <tr>
-            <th>Ours 4k codes</th>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/2154_1167_000020-0001_None_10.666666666666666_Ours-4k-codes.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/2216_1259_000083_None_11.71156462585034_Ours-4k-codes.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/2465_1943_000007-0002_None_13.714285714285714_Ours-4k-codes.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/4482_3103_000027-0001_None_4.266666666666667_Ours-4k-codes.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/5207_3078_000003-0003_None_5.093877551020408_Ours-4k-codes.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/5476_3103_000035-0001_None_4.092517006802721_Ours-4k-codes.wav"></audio></td>
-          </tr>
-          <tr>
-            <th>Spectral Codec</th>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/2154_1167_000020-0001_None_10.666666666666666_SpectralCodec.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/2216_1259_000083_None_11.71156462585034_SpectralCodec.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/2465_1943_000007-0002_None_13.714285714285714_SpectralCodec.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/4482_3103_000027-0001_None_4.266666666666667_SpectralCodec.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/5207_3078_000003-0003_None_5.093877551020408_SpectralCodec.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/fr/5476_3103_000035-0001_None_4.092517006802721_SpectralCodec.wav"></audio></td>
           </tr>
         </tbody>
       </table>
@@ -760,13 +650,13 @@
         </thead>
         <tbody>
           <tr>
-            <th>DAC 7.75kbps</th>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/it/1131_529_000036_None_11.58095238095238_DAC-7.75kbps.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/it/4009_5281_000032-0001_None_8.010884353741497_DAC-7.75kbps.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/it/428_529_000033-0001_None_10.405442176870748_DAC-7.75kbps.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/it/6698_5281_000050_None_15.45578231292517_DAC-7.75kbps.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/it/7372_6589_000004-0001_None_17.240816326530613_DAC-7.75kbps.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/it/7458_6589_000029_None_10.917006802721088_DAC-7.75kbps.wav"></audio></td>
+            <th>GT</th>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/it/1131_529_000036_None_11.58095238095238_GT.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/it/4009_5281_000032-0001_None_8.010884353741497_GT.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/it/428_529_000033-0001_None_10.405442176870748_GT.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/it/6698_5281_000050_None_15.45578231292517_GT.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/it/7372_6589_000004-0001_None_17.240816326530613_GT.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/it/7458_6589_000029_None_10.917006802721088_GT.wav"></audio></td>
           </tr>
           <tr>
             <th>Encodec 6kbps</th>
@@ -778,13 +668,22 @@
             <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/it/7458_6589_000029_None_10.917006802721088_Encodec-6kbps.wav"></audio></td>
           </tr>
           <tr>
-            <th>Ground truth</th>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/it/1131_529_000036_None_11.58095238095238_GT.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/it/4009_5281_000032-0001_None_8.010884353741497_GT.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/it/428_529_000033-0001_None_10.405442176870748_GT.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/it/6698_5281_000050_None_15.45578231292517_GT.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/it/7372_6589_000004-0001_None_17.240816326530613_GT.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/it/7458_6589_000029_None_10.917006802721088_GT.wav"></audio></td>
+            <th>DAC 7.75kbps</th>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/it/1131_529_000036_None_11.58095238095238_DAC-7.75kbps.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/it/4009_5281_000032-0001_None_8.010884353741497_DAC-7.75kbps.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/it/428_529_000033-0001_None_10.405442176870748_DAC-7.75kbps.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/it/6698_5281_000050_None_15.45578231292517_DAC-7.75kbps.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/it/7372_6589_000004-0001_None_17.240816326530613_DAC-7.75kbps.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/it/7458_6589_000029_None_10.917006802721088_DAC-7.75kbps.wav"></audio></td>
+          </tr>
+          <tr>
+            <th>Spectral Codec</th>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/it/1131_529_000036_None_11.58095238095238_SpectralCodec.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/it/4009_5281_000032-0001_None_8.010884353741497_SpectralCodec.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/it/428_529_000033-0001_None_10.405442176870748_SpectralCodec.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/it/6698_5281_000050_None_15.45578231292517_SpectralCodec.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/it/7372_6589_000004-0001_None_17.240816326530613_SpectralCodec.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/it/7458_6589_000029_None_10.917006802721088_SpectralCodec.wav"></audio></td>
           </tr>
           <tr>
             <th>Ours 2k codes</th>
@@ -804,21 +703,158 @@
             <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/it/7372_6589_000004-0001_None_17.240816326530613_Ours-4k-codes.wav"></audio></td>
             <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/it/7458_6589_000029_None_10.917006802721088_Ours-4k-codes.wav"></audio></td>
           </tr>
+        </tbody>
+      </table>
+      
+      
+       <p><b>Polish samples</b></p>
+      
+      <table border="1" class="dataframe">
+        <thead>
+          <tr>
+            <th></th>
+            <th colspan="3" halign="left">Samples</th>
+          </tr>
+          <tr>
+            <th>Speaker Name</th>
+            <th>8758</th>
+            <th>9098</th>
+            <th>9860</th>
+          </tr>
+          <tr>
+            <th>Codec</th>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>GT</th>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pl/8758_8338_000057-0001_None_3.700680272108844_GT.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pl/9098_8338_000061-0001_None_12.582312925170068_GT.wavaudios_demo/codecs_reconstruction_22kHz/cml/pl/9098_8338_000089-0001_None_9.839455782312925_GT.wavaudios_demo/codecs_reconstruction_22kHz/cml/pl/9098_8338_000100-0002_None_3.570068027210884_GT.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pl/9860_8338_000008-0001_None_10.971428571428572_GT.wavaudios_demo/codecs_reconstruction_22kHz/cml/pl/9860_8338_000063-0003_None_11.450340136054422_GT.wav"></audio></td>
+          </tr>
+          <tr>
+            <th>Encodec 6kbps</th>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pl/8758_8338_000057-0001_None_3.700680272108844_Encodec-6kbps.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pl/9098_8338_000061-0001_None_12.582312925170068_Encodec-6kbps.wavaudios_demo/codecs_reconstruction_22kHz/cml/pl/9098_8338_000089-0001_None_9.839455782312925_Encodec-6kbps.wavaudios_demo/codecs_reconstruction_22kHz/cml/pl/9098_8338_000100-0002_None_3.570068027210884_Encodec-6kbps.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pl/9860_8338_000008-0001_None_10.971428571428572_Encodec-6kbps.wavaudios_demo/codecs_reconstruction_22kHz/cml/pl/9860_8338_000063-0003_None_11.450340136054422_Encodec-6kbps.wav"></audio></td>
+          </tr>
+          <tr>
+            <th>DAC 7.75kbps</th>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pl/8758_8338_000057-0001_None_3.700680272108844_DAC-7.75kbps.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pl/9098_8338_000061-0001_None_12.582312925170068_DAC-7.75kbps.wavaudios_demo/codecs_reconstruction_22kHz/cml/pl/9098_8338_000089-0001_None_9.839455782312925_DAC-7.75kbps.wavaudios_demo/codecs_reconstruction_22kHz/cml/pl/9098_8338_000100-0002_None_3.570068027210884_DAC-7.75kbps.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pl/9860_8338_000008-0001_None_10.971428571428572_DAC-7.75kbps.wavaudios_demo/codecs_reconstruction_22kHz/cml/pl/9860_8338_000063-0003_None_11.450340136054422_DAC-7.75kbps.wav"></audio></td>
+          </tr>
           <tr>
             <th>Spectral Codec</th>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/it/1131_529_000036_None_11.58095238095238_SpectralCodec.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/it/4009_5281_000032-0001_None_8.010884353741497_SpectralCodec.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/it/428_529_000033-0001_None_10.405442176870748_SpectralCodec.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/it/6698_5281_000050_None_15.45578231292517_SpectralCodec.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/it/7372_6589_000004-0001_None_17.240816326530613_SpectralCodec.wav"></audio></td>
-            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/it/7458_6589_000029_None_10.917006802721088_SpectralCodec.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pl/8758_8338_000057-0001_None_3.700680272108844_SpectralCodec.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pl/9098_8338_000061-0001_None_12.582312925170068_SpectralCodec.wavaudios_demo/codecs_reconstruction_22kHz/cml/pl/9098_8338_000089-0001_None_9.839455782312925_SpectralCodec.wavaudios_demo/codecs_reconstruction_22kHz/cml/pl/9098_8338_000100-0002_None_3.570068027210884_SpectralCodec.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pl/9860_8338_000008-0001_None_10.971428571428572_SpectralCodec.wavaudios_demo/codecs_reconstruction_22kHz/cml/pl/9860_8338_000063-0003_None_11.450340136054422_SpectralCodec.wav"></audio></td>
+          </tr>
+          <tr>
+            <th>Ours 2k codes</th>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pl/8758_8338_000057-0001_None_3.700680272108844_Ours-2k-codes.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pl/9098_8338_000061-0001_None_12.582312925170068_Ours-2k-codes.wavaudios_demo/codecs_reconstruction_22kHz/cml/pl/9098_8338_000089-0001_None_9.839455782312925_Ours-2k-codes.wavaudios_demo/codecs_reconstruction_22kHz/cml/pl/9098_8338_000100-0002_None_3.570068027210884_Ours-2k-codes.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pl/9860_8338_000008-0001_None_10.971428571428572_Ours-2k-codes.wavaudios_demo/codecs_reconstruction_22kHz/cml/pl/9860_8338_000063-0003_None_11.450340136054422_Ours-2k-codes.wav"></audio></td>
+          </tr>
+          <tr>
+            <th>Ours 4k codes</th>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pl/8758_8338_000057-0001_None_3.700680272108844_Ours-4k-codes.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pl/9098_8338_000061-0001_None_12.582312925170068_Ours-4k-codes.wavaudios_demo/codecs_reconstruction_22kHz/cml/pl/9098_8338_000089-0001_None_9.839455782312925_Ours-4k-codes.wavaudios_demo/codecs_reconstruction_22kHz/cml/pl/9098_8338_000100-0002_None_3.570068027210884_Ours-4k-codes.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/cml/pl/9860_8338_000008-0001_None_10.971428571428572_Ours-4k-codes.wavaudios_demo/codecs_reconstruction_22kHz/cml/pl/9860_8338_000063-0003_None_11.450340136054422_Ours-4k-codes.wav"></audio></td>
           </tr>
         </tbody>
       </table>
       
-
-
-
+      
+      
+      <p><b>DAPS test set</b></p>
+      
+      <table border="1" class="dataframe">
+        <thead>
+          <tr>
+            <th></th>
+            <th colspan="6" halign="left">Samples</th>
+          </tr>
+          <tr>
+            <th>Speaker Name</th>
+            <th>f10 </th>
+            <th>f10 </th>
+            <th>m10 </th>
+            <th>m10 </th>
+            <th>m10 </th>
+            <th>m10 </th>
+          </tr>
+          <tr>
+            <th>Codec</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>GT</th>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/daps/f10_script3_cleanraw_00000012_GT.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/daps/f10_script3_cleanraw_00000020_GT.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/daps/m10_script1_cleanraw_00000005_GT.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/daps/m10_script2_cleanraw_00000023_GT.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/daps/m10_script3_cleanraw_00000025_GT.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/daps/m10_script5_cleanraw_00000009_GT.wav"></audio></td>
+          </tr>
+          <tr>
+            <th>Encodec 6kbps</th>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/daps/f10_script3_cleanraw_00000012_Encodec-6kbps.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/daps/f10_script3_cleanraw_00000020_Encodec-6kbps.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/daps/m10_script1_cleanraw_00000005_Encodec-6kbps.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/daps/m10_script2_cleanraw_00000023_Encodec-6kbps.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/daps/m10_script3_cleanraw_00000025_Encodec-6kbps.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/daps/m10_script5_cleanraw_00000009_Encodec-6kbps.wav"></audio></td>
+          </tr>
+          <tr>
+            <th>DAC 7.75kbps</th>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/daps/f10_script3_cleanraw_00000012_DAC-7.75kbps.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/daps/f10_script3_cleanraw_00000020_DAC-7.75kbps.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/daps/m10_script1_cleanraw_00000005_DAC-7.75kbps.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/daps/m10_script2_cleanraw_00000023_DAC-7.75kbps.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/daps/m10_script3_cleanraw_00000025_DAC-7.75kbps.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/daps/m10_script5_cleanraw_00000009_DAC-7.75kbps.wav"></audio></td>
+          </tr>
+          <tr>
+            <th>Spectral Codec</th>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/daps/f10_script3_cleanraw_00000012_SpectralCodec.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/daps/f10_script3_cleanraw_00000020_SpectralCodec.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/daps/m10_script1_cleanraw_00000005_SpectralCodec.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/daps/m10_script2_cleanraw_00000023_SpectralCodec.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/daps/m10_script3_cleanraw_00000025_SpectralCodec.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/daps/m10_script5_cleanraw_00000009_SpectralCodec.wav"></audio></td>
+          </tr>
+          <tr>
+            <th>Ours 2k codes</th>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/daps/f10_script3_cleanraw_00000012_Ours-2k-codes.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/daps/f10_script3_cleanraw_00000020_Ours-2k-codes.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/daps/m10_script1_cleanraw_00000005_Ours-2k-codes.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/daps/m10_script2_cleanraw_00000023_Ours-2k-codes.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/daps/m10_script3_cleanraw_00000025_Ours-2k-codes.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/daps/m10_script5_cleanraw_00000009_Ours-2k-codes.wav"></audio></td>
+          </tr>
+          <tr>
+            <th>Ours 4k codes</th>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/daps/f10_script3_cleanraw_00000012_Ours-4k-codes.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/daps/f10_script3_cleanraw_00000020_Ours-4k-codes.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/daps/m10_script1_cleanraw_00000005_Ours-4k-codes.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/daps/m10_script2_cleanraw_00000023_Ours-4k-codes.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/daps/m10_script3_cleanraw_00000025_Ours-4k-codes.wav"></audio></td>
+            <td><audio controls style="width: 110px;" src="audios_demo/codecs_reconstruction_22kHz/daps/m10_script5_cleanraw_00000009_Ours-4k-codes.wav"></audio></td>
+          </tr>
+        </tbody>
+      </table>
+      
 
 <h3>Citation</h3>
       <pre class="highlight">
