@@ -31,174 +31,80 @@ def set_seed(random_seed=1234):
 set_seed()
 
 
-def create_html_table(used_samples):
-    useful_columns = ["Speaker Name", "Model Name", "generated_wav"]
-    df = pd.DataFrame.from_dict(used_samples, orient='columns')
-    # Add references as a model
-    speaker_references = df["speaker_reference"].unique()
+def create_html_table(dic):
 
-    aux_list = []
-    for ref in speaker_references:
-        d = {"Speaker Name": "_".join(ref.split("/")[-1].split("_")[:2]), "Model Name": "0 Speaker Reference", "generated_wav": ref}
-        aux_list.append(d)
 
-    # drop useless columns
-    df.drop(df.columns.difference(useful_columns), 1, inplace=True)
+    
+    df = pd.DataFrame.from_dict(dic, orient='columns')
 
-    df = pd.concat([pd.DataFrame.from_dict(aux_list, orient='columns'), df], ignore_index=True)
+    # df = pd.concat([pd.DataFrame.from_dict(aux_list, orient='columns'), df], ignore_index=True)
 
 
 
     # df = df.sort_values('Model Name')
-  
-    html = df.pivot_table(values=['generated_wav'], index=["Model Name"], columns=['Speaker Name'], aggfunc='sum').to_html()
+    
+    # html = df.pivot_table(values=['generated_wav'], index=["Model Name"], columns=['Speaker Name'], aggfunc='sum').to_html()
+
+    html = df.pivot_table(values=['Samples'], index=["Codec"], columns=['Speaker Name'], aggfunc='sum').to_html()
+
 
     # added audio 
     html = html.replace("<td>audios_demo/", '<td><audio controls style="width: 110px;" src="audios_demo/')
     html = html.replace(".wav</td>", '.wav"></audio></td>').replace("Speaker", "Speaker")
 
-    for key in MAP_names:
-        model_name = MAP_names[key]
-        html = html.replace(model_name, model_name[2:])
 
     print(html)
 
 
-EVAL_PATH = "audios_demo/Evaluation/"
-
-samples_files = list(glob(f'{EVAL_PATH}/**/custom_generated_sentences.csv', recursive=True))
-samples_files.sort()
-
-
-MAP_names = {"Speaker Reference": "0 Speaker Reference", 
-             "Tortoise": "1 Tortoise",
-             "StyleTTS2": "2 StyleTTS 2",
-             "Mega-TTS2": "3 Mega-TTS 2",
-             "HierSpeech++": "4 HierSpeech++",
-             "YourTTS_original": "5 Original YourTTS",
-             "YourTTS_libritts_en": "6 YourTTS LibriTTS (Exp 1.)",
-             "YourTTS_XTTS": "7 YourTTS XTTS (Exp 2.)",
-             "XTTS_v2.0.2":"8 XTTS (Exp 3.)"
-}
-
-
-out_csv = f"samples_demo.csv"
 
 
 
 
-Supported_languages = [
-        "en",
-        "zh-cn",
-        "pt",
-        "es",
-        "fr",
-        "de",
-        "it",
-        "pl",
-        "tr",
-        "ru",
-        "nl",
-        "cs",
-        "ar",
-        "hu",
-        "ko",
-        "ja"
-]
+
+
 
 lang_map = {
 
         "en": "English",
         "pt": "Portuguese",
-        "es": "Spanish",
+        "sp": "Spanish",
         "fr": "French",
-        "de": "German",
+        "ge": "German",
         "it": "Italian",
         "pl": "Polish",
-        "tr": "Turkish",
-        "ru": "Russian",
-        "nl": "Dutch",
-        "cs": "Czech",
-        "ar": "Arabic",
-        "zh-cn": "Chinese",
-        "hu": "Hungarian",
-        "ko": "Korean",
-        "ja": "Japanese"
+        "du": "Dutch",
 }
 
-all_used_samples = []
-for lang in Supported_languages:
-    selected_audio_paths = {}
-    selected_text = {}
-    used_samples = []
+samples_path = "/home/ecasanova/Projects/Papers/ICASSP-2025-21Hz-codec/NeMo-Speech-Codec/audios_demo/codecs_reconstruction_22kHz/"
 
-    for SAMPLES_CSV in samples_files:
-        if "FT/" in SAMPLES_CSV:
-            continue
-        df = pd.read_csv(SAMPLES_CSV)
+from glob import glob
 
-        df = df.loc[df['language'].isin([lang])]
-        if df.empty:
-            continue
-        # group by speaker_reference
-        df_speakers = df.groupby('speaker_reference')
-        for name, df_speaker in df_speakers:
-            # if sample was already selected for this speaker find from anothers DF
-            if selected_audio_paths and name in selected_audio_paths.keys():
-                selected_item = df_speaker.loc[df_speaker['text'].isin(selected_text[name])].iloc[0]
-                selected_item["Speaker Name"] = "_".join(name.split("/")[-1].split("_")[:2])
-                selected_item["Model Name"] = SAMPLES_CSV.split("/Evaluation/")[-1].split("/")[0]
 
-                for key in MAP_names:
-                    if key in selected_item["Model Name"]:
-                        selected_item["Model Name"] = MAP_names[key]
-                        break
+all_samples = glob(samples_path + '**/*.wav', recursive=True)
 
-                selected_item["generated_wav"] = os.path.join(EVAL_PATH.replace("Evaluation/", ""), selected_item["generated_wav"])
-                selected_item["speaker_reference"] = os.path.join(EVAL_PATH.replace("Evaluation/", ""), selected_item["speaker_reference"])
-                selected_audio_paths[name].append(selected_item["generated_wav"])
-                # selected_text[name].append(selected_item["text"])
-                used_samples.append(selected_item)
-            else:
-                # random select a sentence
-                selected_item = df_speaker.sample(n=1).iloc[0]
-                selected_item["Speaker Name"] = "_".join(name.split("/")[-1].split("_")[:2])
-                selected_item["Model Name"] = SAMPLES_CSV.split("audios_demo/Evaluation/")[-1].split("/")[0]
-                selected_item["generated_wav"] = os.path.join(EVAL_PATH.replace("Evaluation/", ""), selected_item["generated_wav"])
-                selected_item["speaker_reference"] = os.path.join(EVAL_PATH.replace("Evaluation/", ""), selected_item["speaker_reference"])
-                
-                for key in MAP_names:
-                    if key in selected_item["Model Name"]:
-                        selected_item["Model Name"] = MAP_names[key]
-                        break
 
-                # print(selected_item)
-                selected_audio_paths[name] = [selected_item["generated_wav"]]
-                selected_text[name] = [selected_item["text"]]
-                used_samples.append(selected_item)
-    all_used_samples.extend(used_samples)
-    language = lang_map[lang]
+language_samples = {}
+for sample in all_samples:
+    if "/daps/" in sample:
+        lang = "DAPS"
+    else:
+        lang = os.path.dirname(sample).split("/")[-1]
+        lang = lang_map[lang]
+    
+    audio_path = sample.split("NeMo-Speech-Codec/")[-1]
+
+    model_name = os.path.basename(audio_path).split("_")[-1].replace(".wav", "").replace("-", " ").replace("SpectralCodec", "Spectral Codec")
+    speaker_name = os.path.basename(audio_path).split("_")[0]
+
+    print(model_name, audio_path, speaker_name)
+    dic = {"Codec": model_name, "Samples": audio_path, "Speaker Name": speaker_name}
+
+    if lang not in language_samples:
+        language_samples[lang] = [dic]
+    else:
+        language_samples[lang].append(dic)
+
+
+for language in language_samples:
     print(f"\n\n <p><b>{language} samples</b></p>\n")
-    create_html_table(used_samples)
-
-
-# print(selected_audio_paths)
-
-
-
-df_out = pd.DataFrame.from_dict(all_used_samples, orient='columns')
-df_out.to_csv(out_csv, index=False, sep=',', encoding='utf-8')
-print("CSV saved at:", out_csv)
-
-# delete all unused audio samples
-used_files = df_out["generated_wav"].tolist()
-# print(used_files)
-audio_files = list(glob(f'{EVAL_PATH}/**/*.wav', recursive=True))
-# print(audio_files[:10])
-
-for file in audio_files:
-    if file not in used_files:
-        # print(file)
-        if os.path.isfile(file):
-            os.remove(file)
-# df_out["generated_wav"]
+    create_html_table(language_samples[language])
