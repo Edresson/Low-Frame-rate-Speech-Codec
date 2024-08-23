@@ -7,7 +7,7 @@ TARGET_DIR="/home/ecasanova/Projects/Papers/ICASSP-2025-21Hz-codec/NeMo-Speech-C
 
 
 OUT_EXTENSION=".wav"
-SEARCH_EXTENSION=".wav"
+SEARCH_EXTENSION=".flac"
 export SOURCE_DIR
 export TARGET_DIR
 export OUT_EXTENSION
