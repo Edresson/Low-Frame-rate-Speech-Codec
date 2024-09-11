@@ -1,3 +1,3 @@
-# XTTS
+# Low Frame rate Speech Codec
 
-[XTTS audio demo page](https://edresson.github.io/XTTS/)
+[Low Frame rate Speech Codec demo page](https://edresson.github.io/Low-Frame-rate-Speech-Codec/)
