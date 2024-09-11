@@ -2,12 +2,13 @@
 #!/bin/bash
 
 
-SOURCE_DIR="/home/ecasanova/Projects/Papers/ICASSP-2025-21Hz-codec/NeMo-Speech-Codec/audios_demo/codecs_reconstruction/"
-TARGET_DIR="/home/ecasanova/Projects/Papers/ICASSP-2025-21Hz-codec/NeMo-Speech-Codec/audios_demo/codecs_reconstruction_22kHz/"
+SOURCE_DIR="/home/ecasanova/Projects/Papers/ICASSP-2025-21Hz-codec/NeMo-Speech-Codec/audios_demo/T5-TTS/"
+TARGET_DIR="/home/ecasanova/Projects/Papers/ICASSP-2025-21Hz-codec/NeMo-Speech-Codec/audios_demo/T5-TTS_22kHz/"
+
 
 
 OUT_EXTENSION=".wav"
-SEARCH_EXTENSION=".flac"
+SEARCH_EXTENSION=".wav"
 export SOURCE_DIR
 export TARGET_DIR
 export OUT_EXTENSION
@@ -35,7 +36,7 @@ dofiles() {
         outFilePath=$(dirname "${outFile}")
         mkdir -p "${outFilePath}"
         if [ ! -f "$outFile" ]; then # If the mp3 file doesn't exist already
-            echo "Input: $inputFile"
+            echo "Input: $inputFile"    
             echo "Output: $outFile"
             cp "$inputFile" "$outFile"
         fi

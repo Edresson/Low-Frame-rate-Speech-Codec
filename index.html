@@ -4,7 +4,7 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8">
-    <title>NeMo Speech Codec</title>
+    <title>Low Frame-rate Speech Codec</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
@@ -19,7 +19,7 @@
         <div class="main-title">
           <h1 class="project-name"><span><a href="index.html">NeMo Speech Codec</a></span></h1>
           <!-- <h2 class="project-tagline">Sentence Boundary Detection using Deep Learning</h2> -->
-          <h2 class="project-tagline">A low frame rate Neural Audio Codec designed for fast high-quality Speech LLM training and inference</h2>
+          <h2 class="project-tagline">a Codec Designed for Fast High-quality Speech LLM Training and Inference</h2>
           <!-- <a href="https://github.com/mtreviso/deepbond" class="btn">Ver no GitHub</a> -->
            <!-- <div class="dropdown">
              <!-- <a href="projeto.html" class="btn">O Projeto</a>
@@ -64,8 +64,8 @@
         <br>
         <br>
         <div style="text-align: center;">
-          <h2>NeMo Speech Codec: A low frame rate Neural Audio Codec designed for fast high-quality Speech LLM training and inference</h3>
-            <p> <b>Edresson Casanova, Ryan Langman, Paarth Neekhara, Shehzeen Hussain, Jason Li, Ante Jukić, Sang-gil Lee, Boris Ginsburg</b></p>
+          <h2>Low Frame-rate Speech Codec: a Codec Designed for Fast High-quality Speech LLM Training and Inference</h3>
+            <p> <b>Edresson Casanova, Ryan Langman, Paarth Neekhara, Shehzeen Hussain, Jason Li, Subhankar Ghosh, Ante Jukić, Sang-gil Lee, Boris Ginsburg</b></p>
         
 
         </div>
@@ -75,8 +75,8 @@
 
       <p>
            
-        Large language models (LLMs) have significantly advanced audio processing through audio codecs that convert audio into discrete tokens, enabling the application of language modeling techniques to audio data. However, traditional codecs often operate at high frame rates, which slows down the training and, especially, the autoregressive inference of Speech LLMs\footnote. To address this challenge, we present NeMo Speech Codec, a Neural Audio Codec (NAC) that leverages Finite Scalar Quantization (FSQ) and adversarial training with large speech language models (SLMs) to achieve high-quality audio compression at a 1.89 kbps bitrate and 21.5 frames per second. We have trained a state-of-the-art (SOTA) LLM-based Text-To-Speech (TTS) model and demonstrated that our novel codec can speed up inference by nearly 4x without sacrificing audio quality.
-
+        Large language models (LLMs) have significantly advanced audio processing through audio codecs that convert audio into discrete tokens, enabling the application of language modeling techniques to audio data. However, audio codecs often operate at high frame rates, resulting in slow training and inference, especially for autoregressive models. To address this challenge, we present the Low Frame-rate Speech Codec (LFSC): a neural audio codec that leverages finite scalar quantization and adversarial training with large speech language models to achieve high-quality audio compression with a 1.89 kbps bitrate and 21.5 frames per second. We demonstrate that our novel codec can make the inference of LLM-based text-to-speech (TTS) models around three times faster while improving intelligibility and producing quality comparable to previous models.
+      
       </p>
 
       <!-- <h3>System architecture:</h3>
@@ -936,7 +936,227 @@
         </tbody>
       </table>
       
-      
+      <h2>ZS-TTS audio samples</h2>
+
+  <table border="1" class="dataframe">
+    <thead>
+      <tr>
+        <th></th>
+        <th colspan="20" halign="left">Samples</th>
+      </tr>
+      <tr>
+        <th>Speaker Name</th>
+        <th>p249</th>
+        <th>p260</th>
+        <th>p264</th>
+        <th>p268</th>
+        <th>p269</th>
+        <th>p270</th>
+        <th>p277</th>
+        <th>p292</th>
+        <th>p294</th>
+        <th>p295</th>
+        <th>p297</th>
+        <th>p301</th>
+        <th>p310</th>
+        <th>p314</th>
+        <th>p316</th>
+        <th>p318</th>
+        <th>p341</th>
+        <th>p347</th>
+        <th>p363</th>
+        <th>p376</th>
+      </tr>
+      <tr>
+        <th>Codec</th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>GT</th>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p249_sample_p249_167_with_ref_p249_005_idx_58_GT.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p260_sample_p260_022_with_ref_p260_160_idx_184_GT.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p264_sample_p264_130_with_ref_p264_334_idx_0_GT.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p268_sample_p268_045_with_ref_p268_322_idx_75_GT.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p269_sample_p269_024_with_ref_p269_008_idx_162_GT.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p270_sample_p270_177_with_ref_p270_397_idx_82_GT.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p277_sample_p277_380_with_ref_p277_143_idx_137_GT.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p292_sample_p292_101_with_ref_p292_285_idx_174_GT.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p294_sample_p294_276_with_ref_p294_091_idx_117_GT.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p295_sample_p295_068_with_ref_p295_251_idx_94_GT.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p297_sample_p297_083_with_ref_p297_109_idx_26_GT.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p301_sample_p301_174_with_ref_p301_076_idx_39_GT.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p310_sample_p310_034_with_ref_p310_390_idx_64_GT.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p314_sample_p314_253_with_ref_p314_117_idx_14_GT.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p316_sample_p316_195_with_ref_p316_183_idx_146_GT.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p318_sample_p318_300_with_ref_p318_043_idx_151_GT.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p341_sample_p341_149_with_ref_p341_165_idx_192_GT.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p347_sample_p347_393_with_ref_p347_422_idx_47_GT.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p363_sample_p363_004_with_ref_p363_092_idx_120_GT.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p376_sample_p376_230_with_ref_p376_004_idx_101_GT.wav"></audio></td>
+      </tr>
+      <tr>
+        <th>Reference</th>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p249_sample_p249_167_with_ref_p249_005_idx_58_Reference.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p260_sample_p260_022_with_ref_p260_160_idx_184_Reference.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p264_sample_p264_130_with_ref_p264_334_idx_0_Reference.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p268_sample_p268_045_with_ref_p268_322_idx_75_Reference.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p269_sample_p269_024_with_ref_p269_008_idx_162_Reference.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p270_sample_p270_177_with_ref_p270_397_idx_82_Reference.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p277_sample_p277_380_with_ref_p277_143_idx_137_Reference.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p292_sample_p292_101_with_ref_p292_285_idx_174_Reference.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p294_sample_p294_276_with_ref_p294_091_idx_117_Reference.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p295_sample_p295_068_with_ref_p295_251_idx_94_Reference.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p297_sample_p297_083_with_ref_p297_109_idx_26_Reference.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p301_sample_p301_174_with_ref_p301_076_idx_39_Reference.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p310_sample_p310_034_with_ref_p310_390_idx_64_Reference.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p314_sample_p314_253_with_ref_p314_117_idx_14_Reference.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p316_sample_p316_195_with_ref_p316_183_idx_146_Reference.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p318_sample_p318_300_with_ref_p318_043_idx_151_Reference.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p341_sample_p341_149_with_ref_p341_165_idx_192_Reference.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p347_sample_p347_393_with_ref_p347_422_idx_47_Reference.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p363_sample_p363_004_with_ref_p363_092_idx_120_Reference.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p376_sample_p376_230_with_ref_p376_004_idx_101_Reference.wav"></audio></td>
+      </tr>
+      <tr>
+        <th>Encodec 6kbps</th>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p249_sample_p249_167_with_ref_p249_005_idx_58_Encodec-6kbps.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p260_sample_p260_022_with_ref_p260_160_idx_184_Encodec-6kbps.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p264_sample_p264_130_with_ref_p264_334_idx_0_Encodec-6kbps.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p268_sample_p268_045_with_ref_p268_322_idx_75_Encodec-6kbps.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p269_sample_p269_024_with_ref_p269_008_idx_162_Encodec-6kbps.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p270_sample_p270_177_with_ref_p270_397_idx_82_Encodec-6kbps.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p277_sample_p277_380_with_ref_p277_143_idx_137_Encodec-6kbps.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p292_sample_p292_101_with_ref_p292_285_idx_174_Encodec-6kbps.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p294_sample_p294_276_with_ref_p294_091_idx_117_Encodec-6kbps.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p295_sample_p295_068_with_ref_p295_251_idx_94_Encodec-6kbps.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p297_sample_p297_083_with_ref_p297_109_idx_26_Encodec-6kbps.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p301_sample_p301_174_with_ref_p301_076_idx_39_Encodec-6kbps.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p310_sample_p310_034_with_ref_p310_390_idx_64_Encodec-6kbps.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p314_sample_p314_253_with_ref_p314_117_idx_14_Encodec-6kbps.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p316_sample_p316_195_with_ref_p316_183_idx_146_Encodec-6kbps.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p318_sample_p318_300_with_ref_p318_043_idx_151_Encodec-6kbps.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p341_sample_p341_149_with_ref_p341_165_idx_192_Encodec-6kbps.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p347_sample_p347_393_with_ref_p347_422_idx_47_Encodec-6kbps.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p363_sample_p363_004_with_ref_p363_092_idx_120_Encodec-6kbps.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p376_sample_p376_230_with_ref_p376_004_idx_101_Encodec-6kbps.wav"></audio></td>
+      </tr>
+      <tr>
+        <th>DAC 7.75kbps</th>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p249_sample_p249_167_with_ref_p249_005_idx_58_DAC-7.75kbps.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p260_sample_p260_022_with_ref_p260_160_idx_184_DAC-7.75kbps.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p264_sample_p264_130_with_ref_p264_334_idx_0_DAC-7.75kbps.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p268_sample_p268_045_with_ref_p268_322_idx_75_DAC-7.75kbps.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p269_sample_p269_024_with_ref_p269_008_idx_162_DAC-7.75kbps.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p270_sample_p270_177_with_ref_p270_397_idx_82_DAC-7.75kbps.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p277_sample_p277_380_with_ref_p277_143_idx_137_DAC-7.75kbps.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p292_sample_p292_101_with_ref_p292_285_idx_174_DAC-7.75kbps.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p294_sample_p294_276_with_ref_p294_091_idx_117_DAC-7.75kbps.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p295_sample_p295_068_with_ref_p295_251_idx_94_DAC-7.75kbps.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p297_sample_p297_083_with_ref_p297_109_idx_26_DAC-7.75kbps.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p301_sample_p301_174_with_ref_p301_076_idx_39_DAC-7.75kbps.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p310_sample_p310_034_with_ref_p310_390_idx_64_DAC-7.75kbps.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p314_sample_p314_253_with_ref_p314_117_idx_14_DAC-7.75kbps.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p316_sample_p316_195_with_ref_p316_183_idx_146_DAC-7.75kbps.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p318_sample_p318_300_with_ref_p318_043_idx_151_DAC-7.75kbps.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p341_sample_p341_149_with_ref_p341_165_idx_192_DAC-7.75kbps.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p347_sample_p347_393_with_ref_p347_422_idx_47_DAC-7.75kbps.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p363_sample_p363_004_with_ref_p363_092_idx_120_DAC-7.75kbps.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p376_sample_p376_230_with_ref_p376_004_idx_101_DAC-7.75kbps.wav"></audio></td>
+      </tr>
+      <tr>
+        <th>Spectral Codec</th>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p249_sample_p249_167_with_ref_p249_005_idx_58_SpectralCodec.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p260_sample_p260_022_with_ref_p260_160_idx_184_SpectralCodec.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p264_sample_p264_130_with_ref_p264_334_idx_0_SpectralCodec.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p268_sample_p268_045_with_ref_p268_322_idx_75_SpectralCodec.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p269_sample_p269_024_with_ref_p269_008_idx_162_SpectralCodec.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p270_sample_p270_177_with_ref_p270_397_idx_82_SpectralCodec.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p277_sample_p277_380_with_ref_p277_143_idx_137_SpectralCodec.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p292_sample_p292_101_with_ref_p292_285_idx_174_SpectralCodec.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p294_sample_p294_276_with_ref_p294_091_idx_117_SpectralCodec.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p295_sample_p295_068_with_ref_p295_251_idx_94_SpectralCodec.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p297_sample_p297_083_with_ref_p297_109_idx_26_SpectralCodec.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p301_sample_p301_174_with_ref_p301_076_idx_39_SpectralCodec.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p310_sample_p310_034_with_ref_p310_390_idx_64_SpectralCodec.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p314_sample_p314_253_with_ref_p314_117_idx_14_SpectralCodec.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p316_sample_p316_195_with_ref_p316_183_idx_146_SpectralCodec.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p318_sample_p318_300_with_ref_p318_043_idx_151_SpectralCodec.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p341_sample_p341_149_with_ref_p341_165_idx_192_SpectralCodec.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p347_sample_p347_393_with_ref_p347_422_idx_47_SpectralCodec.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p363_sample_p363_004_with_ref_p363_092_idx_120_SpectralCodec.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p376_sample_p376_230_with_ref_p376_004_idx_101_SpectralCodec.wav"></audio></td>
+      </tr>
+      <tr>
+        <th>Ours 2k codes</th>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p249_sample_p249_167_with_ref_p249_005_idx_58_Ours-2k-codes.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p260_sample_p260_022_with_ref_p260_160_idx_184_Ours-2k-codes.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p264_sample_p264_130_with_ref_p264_334_idx_0_Ours-2k-codes.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p268_sample_p268_045_with_ref_p268_322_idx_75_Ours-2k-codes.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p269_sample_p269_024_with_ref_p269_008_idx_162_Ours-2k-codes.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p270_sample_p270_177_with_ref_p270_397_idx_82_Ours-2k-codes.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p277_sample_p277_380_with_ref_p277_143_idx_137_Ours-2k-codes.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p292_sample_p292_101_with_ref_p292_285_idx_174_Ours-2k-codes.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p294_sample_p294_276_with_ref_p294_091_idx_117_Ours-2k-codes.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p295_sample_p295_068_with_ref_p295_251_idx_94_Ours-2k-codes.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p297_sample_p297_083_with_ref_p297_109_idx_26_Ours-2k-codes.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p301_sample_p301_174_with_ref_p301_076_idx_39_Ours-2k-codes.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p310_sample_p310_034_with_ref_p310_390_idx_64_Ours-2k-codes.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p314_sample_p314_253_with_ref_p314_117_idx_14_Ours-2k-codes.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p316_sample_p316_195_with_ref_p316_183_idx_146_Ours-2k-codes.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p318_sample_p318_300_with_ref_p318_043_idx_151_Ours-2k-codes.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p341_sample_p341_149_with_ref_p341_165_idx_192_Ours-2k-codes.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p347_sample_p347_393_with_ref_p347_422_idx_47_Ours-2k-codes.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p363_sample_p363_004_with_ref_p363_092_idx_120_Ours-2k-codes.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p376_sample_p376_230_with_ref_p376_004_idx_101_Ours-2k-codes.wav"></audio></td>
+      </tr>
+      <tr>
+        <th>Ours 4k codes</th>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p249_sample_p249_167_with_ref_p249_005_idx_58_Ours-4k-codes.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p260_sample_p260_022_with_ref_p260_160_idx_184_Ours-4k-codes.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p264_sample_p264_130_with_ref_p264_334_idx_0_Ours-4k-codes.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p268_sample_p268_045_with_ref_p268_322_idx_75_Ours-4k-codes.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p269_sample_p269_024_with_ref_p269_008_idx_162_Ours-4k-codes.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p270_sample_p270_177_with_ref_p270_397_idx_82_Ours-4k-codes.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p277_sample_p277_380_with_ref_p277_143_idx_137_Ours-4k-codes.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p292_sample_p292_101_with_ref_p292_285_idx_174_Ours-4k-codes.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p294_sample_p294_276_with_ref_p294_091_idx_117_Ours-4k-codes.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p295_sample_p295_068_with_ref_p295_251_idx_94_Ours-4k-codes.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p297_sample_p297_083_with_ref_p297_109_idx_26_Ours-4k-codes.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p301_sample_p301_174_with_ref_p301_076_idx_39_Ours-4k-codes.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p310_sample_p310_034_with_ref_p310_390_idx_64_Ours-4k-codes.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p314_sample_p314_253_with_ref_p314_117_idx_14_Ours-4k-codes.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p316_sample_p316_195_with_ref_p316_183_idx_146_Ours-4k-codes.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p318_sample_p318_300_with_ref_p318_043_idx_151_Ours-4k-codes.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p341_sample_p341_149_with_ref_p341_165_idx_192_Ours-4k-codes.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p347_sample_p347_393_with_ref_p347_422_idx_47_Ours-4k-codes.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p363_sample_p363_004_with_ref_p363_092_idx_120_Ours-4k-codes.wav"></audio></td>
+        <td><audio controls style="width: 110px;" src="audios_demo/T5-TTS_22kHz/p376_sample_p376_230_with_ref_p376_004_idx_101_Ours-4k-codes.wav"></audio></td>
+      </tr>
+    </tbody>
+  </table>
+
+
 
 <h3>Citation</h3>
       <pre class="highlight">

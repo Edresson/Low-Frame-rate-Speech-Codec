@@ -74,7 +74,7 @@ lang_map = {
         "du": "Dutch",
 }
 
-samples_path = "/home/ecasanova/Projects/Papers/ICASSP-2025-21Hz-codec/NeMo-Speech-Codec/audios_demo/codecs_reconstruction_22kHz/"
+samples_path = "/home/ecasanova/Projects/Papers/ICASSP-2025-21Hz-codec/NeMo-Speech-Codec/audios_demo/T5-TTS_22kHz/"
 
 from glob import glob
 
@@ -83,11 +83,12 @@ all_samples = glob(samples_path + '**/*.wav', recursive=True)
 all_samples.sort()
 model_map = {
     "GT": "0 Ground truth",
-    "Encodec 6kbps": "1 Encodec 6kbps",
-    "DAC 7.75kbps": "2 DAC 7.75kbps",
-    "Spectral Codec": "3 Spectral Codec",
-    "Ours 2k codes": "4 Ours 2k codes",
-    "Ours 4k codes": "5 Ours 4k codes",
+    "Reference": "1 Reference",
+    "Encodec 6kbps": "2 Encodec 6kbps",
+    "DAC 7.75kbps": "3 DAC 7.75kbps",
+    "Spectral Codec": "4 Spectral Codec",
+    "Ours 2k codes": "5 Ours 2k codes",
+    "Ours 4k codes": "6 Ours 4k codes",
 }
 
 language_samples = {}
@@ -95,6 +96,8 @@ count_daps = set()
 for sample in all_samples:
     if "/daps/" in sample:
         lang = "DAPS"
+    elif "/T5-TTS_22kHz/" in sample:
+        lang = "ZS-TTS"
     else:
         lang = os.path.dirname(sample).split("/")[-1]
         lang = lang_map[lang]
